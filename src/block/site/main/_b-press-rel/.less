@@ -1,0 +1,54 @@
+.b-press-rel {
+	
+	.title {
+		#site.bold();
+		#site.color(#333333);
+		#site.size(3.6em);
+		margin:1em 0;
+	}
+	.col-item {
+		#site.size(1.4em);
+		#site.lh(1.75em);
+		#site.color(#333333);
+		padding-right:6em;
+		
+		p {
+			margin:0 0 1em 0;
+			padding:0;
+		}
+		a {
+			#site.color(#0962ac);
+			
+			&:hover {
+				#site.color(#33ccff);
+			}
+		}
+	}
+	.about-invest {
+		#site.size(2.4em);
+		text-align:center;
+		position:relative;
+		margin:2.4em 0;
+		
+		&:before {
+			content:'';
+			position:absolute;
+			left:0;
+			top:50%;
+			#site.bg(#d1d1d1);
+			#site.h(1px);
+			#site.w(100%);
+			z-index:1;
+		}
+		
+		span {
+			position:relative;
+			z-index:2;
+			padding:0em 1em;
+			#site.color(#333333);
+			#site.bold();
+			#site.bg(#ffffff);
+		}
+	}
+	
+}

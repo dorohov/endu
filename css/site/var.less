@@ -1,0 +1,75 @@
+/*
+@url-site:'http://localhost:5891';
+@url-path:'@{url-site}';
+@url-path-css:'@{url-path}/css';
+@url-path-img:'@{url-path}/img';
+@url-path-js:'@{url-path}/js';
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+@url-site:'';
+@url-path:'./..';
+@url-path-css:'@{url-path}/css';
+@url-path-img:'@{url-path}/img';
+@url-path-js:'@{url-path}/js';
+
+@media-size-xs: ~"(max-width: 767px)";
+@media-size-sm: ~"(min-width: 768px) and (max-width: 991px)";
+@media-size-md: ~"(min-width: 992px) and (max-width: 1199px)";
+@media-size-lg: ~"(min-width: 1200px)";
+@media-size-portrait: ~"all and (orientation:portrait)";
+@media-size-landscape: ~"all and (orientation:landscape)";
+@media-size-retina: ~"all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-ms-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)";
+@media-size-print: ~"print";
+
+@trans-speed: 0.4s;
+
+@c-hex-w: #ffffff;
+@c-hex-b: #000000;
+
+#site {
+	
+	.bg(@color:#ffffff) {
+		background-color:@color;
+	}
+	.color(@color:#ffffff) {
+		color:@color;
+	}
+	.underline(@val:underline) {
+		text-decoration:@val;
+	}
+	.uppercase(@val:uppercase) {
+		text-transform:@val;
+	}
+	.size(@val:10px) {
+		font-size:@val;
+	}
+	.bold(@val:bold) {
+		font-weight:@val;
+	}
+	.italic(@val:italic) {
+		font-style:@val;
+	}
+	.z(@val:1) {
+		z-index:@val;
+	}
+	.lh(@val:1em) {
+		line-height:@val;
+	}
+	.ff(@val:gr) {
+		font-family:@val;
+	}
+	.w(@val:0px) {
+		width:@val;
+	}
+	.h(@val:0px) {
+		height:@val;
+	}
+	
+}
