@@ -1,0 +1,112 @@
+.b-main-product {
+	#site.bg(#f6f6f6);
+	
+	.product-line {
+		margin-top:-9em;
+		padding-bottom:6em;
+		
+		.item {
+			position:relative;
+			
+			&.left-col {
+				position:relative;
+				
+				.product:nth-child(1), .product:nth-child(2) {
+					.white {
+						height:46.5em;
+					}
+				}
+				
+				.product:nth-child(1) {
+					position:absolute;
+					left:0;
+					top:0;
+				}
+				
+				.product:nth-child(2) {
+					position:absolute;
+					left:0;
+					bottom:0;
+				}
+			}
+			
+			.product {
+				display:block;
+				padding:1em;
+				
+				&:hover {
+					.white {
+						box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.3);
+					}
+				}
+				
+				.white {
+					#site.bg(@c-hex-w);
+					padding:2em;
+					box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+					
+					.img {
+						display:block;
+						background-position:center center;
+						background-size:contain;
+						background-repeat:no-repeat;
+						
+						img {
+							display:block;
+							margin:3em auto;
+						}
+					}
+					.title {
+						#site.color(#333333);
+						#site.size(1.4em);
+						#site.bold();
+						#site.uppercase;
+						border-top:1px #999999 solid;
+						padding-top:2em;
+						min-height:4.5em;
+					}
+					
+				}
+				
+				&.indiegogo {
+					position:relative;
+					
+					.white.d-t {
+						min-height:278px;
+						#site.bg(transparent);
+						box-shadow:none;
+						outline:1px #eb1e7c solid;
+						display:table;
+						vertical-align:middle;
+						text-align:center;
+						#site.w(100%);
+						#site.h(100%);
+						
+						&:hover {
+							outline:2px #eb1e7c solid;
+						}
+						
+						.d-t-c {
+							display:table-cell;
+							vertical-align:middle;
+							text-align:center;
+							#site.w(100%);
+							#site.h(100%);
+							#site.color(#333333);
+							#site.size(1.8em);
+							#site.bold();
+							
+							span {
+								#site.color(#eb1e7c);
+							}
+						}
+					}
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

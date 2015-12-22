@@ -1,0 +1,37 @@
+.v-scroll-bar {
+	position:absolute;
+	right:0;
+	top:0;
+	#site.w(1em);
+	#site.h(100%);
+	
+	.scroll-line {
+		position:absolute;
+		right:0;
+		top:0;
+		#site.w(100%);
+		#site.h(100%);
+		#site.z(5);
+		
+		&:before {
+			content:'';
+			position:absolute;
+			right:50%;
+			top:0;
+			#site.w(1px);
+			#site.h(100%);
+			#site.z(5);
+			#site.bg(#d1d1d1);
+		}
+		
+		.scroll {
+			position:absolute;
+			#site.w(100%);
+			#site.h(2.5em);
+			#site.bg(#666666);
+			#site.z(6);
+		}
+		
+	}
+	
+}
