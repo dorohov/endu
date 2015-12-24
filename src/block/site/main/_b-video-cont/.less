@@ -17,14 +17,36 @@
 			border-bottom:1px #d1d1d1 solid;
 			#site.h(8.5em);
 			
+			@media @media-size-xs {
+				& {
+					padding:3em 1em;
+					height:initial;
+				}
+			}
+			
 			&:first-child {
 				padding-top:0;
 				#site.h(6.9em);
+				
+				@media @media-size-xs {
+					& {
+						padding:3em 1em;
+						height:initial;
+					}
+				}
 			}
 			
 			&:last-child {
 				border-bottom:none;
 				#site.h(7.1em);
+				
+				@media @media-size-xs {
+					& {
+						padding:3em 1em;
+						height:initial;
+					}
+				}
+				
 			}
 			
 			&:hover {

@@ -18,6 +18,14 @@
 		}
 		
 		.write-to-me {
+			
+			@media @media-size-xs {
+				& {
+					margin:0 0px 30px;
+					padding-left:10px;
+				}
+			}
+			
 			.items a {
 				display:inline-block;
 				vertical-align:middle;
@@ -38,6 +46,14 @@
 		}
 		
 		.subscribe {
+			
+			@media @media-size-xs {
+				& {
+					margin:0 0px 30px;
+					padding-left:10px;
+				}
+			}
+			
 			.title {
 				
 			}
@@ -50,6 +66,19 @@
 					#site.h(34px);
 					#site.size(1.4em);
 					padding:0em 1em;
+					
+					@media @media-size-xs {
+						& {
+							#site.size(1.2em);
+							#site.w(160px);
+						}
+					}
+					
+					@media @media-size-md {
+						& {
+							#site.w(160px);
+						}
+					}
 				}
 				
 				input[type="submit"] {
@@ -71,6 +100,13 @@
 					cursor:pointer;
 					transition:all @trans-speed ease;
 					
+					@media @media-size-xs {
+						& {
+							#site.size(1.2em);
+							border-radius:5px;
+						}
+					}
+					
 					&:hover {
 						#site.color(#f6735e);
 						#site.bg(#fffefe);
@@ -83,10 +119,51 @@
 		.social-cont {
 			text-align:right;
 			
+			@media @media-size-xs {
+				& {
+					margin:0 0px 20px;
+					text-align:center;
+					padding-left:10px;
+				}
+			}
+			
+			@media @media-size-sm {
+				& {
+					text-align:left;
+				}
+			}
+			
+			@media @media-size-md {
+				& {
+					text-align:left;
+				}
+			}
+			
 			.title {
 				display:block;
 				text-align:right;
 				padding-right:125px;
+				
+				@media @media-size-xs {
+					& {
+						text-align:left;
+						padding-right:0px;
+					}
+				}
+				
+				@media @media-size-sm {
+					& {
+						text-align:left;
+						padding-right:0px;
+					}
+				}
+				
+				@media @media-size-md {
+					& {
+						text-align:left;
+						padding-right:0px;
+					}
+				}
 			}
 		}
 		
@@ -98,6 +175,20 @@
 			background-image:url('@{url-path-img}/b-bottom-footer-social.png');
 			margin-left:9px;
 			transition:transform @trans-speed / 2 ease;
+			
+			@media @media-size-xs {
+				& {
+					margin-left:0px;
+					margin-right:30px;
+				}
+			}
+			
+			@media @media-size-md {
+				& {
+					margin-left:0px;
+					margin-right:30px;
+				}
+			}
 			
 			&.i1 {
 				background-position:1px center;
@@ -144,9 +235,25 @@
 			#site.color(#81b7e4);
 			#site.lh(25px);
 			#site.h(25px);
+			
+			@media @media-size-xs {
+				& {
+					float:initial;
+					display:block;
+					margin:0 10px 10px;
+				}
+			}
 		}
 		.created-by {
 			float:right;
+			
+			@media @media-size-xs {
+				& {
+					float:initial;
+					display:block;
+					margin:0 10px 10px;
+				}
+			}
 			
 			a {
 				#site.w(164px);

@@ -13,6 +13,12 @@
 		
 		.hoverdown {
 			#site.bg(#0962ac);
+			
+			@media @media-size-xs {
+				& {
+					text-align:left;
+				}
+			}
 		}
 		
 		.viewonhover {
@@ -38,7 +44,23 @@
 			
 			&.w025 {
 				width:25%;
+				
+				@media @media-size-xs {
+					& {
+						width:100%;
+					}
+				}
 			}
+			
+			@media @media-size-xs {
+				& {
+					display:block;
+					width:100%;
+					text-align:left;
+					padding-left:1em;
+				}
+			}
+			
 		}
 		
 		.search-icon {
@@ -49,6 +71,12 @@
 			background-position:center center;
 			background-repeat:no-repeat;
 			background-image:url('@{url-path-img}/b-top-menu-search-icon-bg.png');
+			
+			@media @media-size-xs {
+				& {
+					display:none;
+				}
+			}
 		}
 		
 	}

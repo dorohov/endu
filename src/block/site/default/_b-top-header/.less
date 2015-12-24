@@ -5,6 +5,15 @@
 	.logo-cont {
 		float:left;
 		
+		@media @media-size-xs {
+			& {
+				display:block;
+				float:initial;
+				margin:0 auto 2em;
+			}
+		}
+		
+		
 		.logo {
 			display:inline-block;
 			width:221px;
@@ -14,11 +23,26 @@
 			background-position:center center;
 			background-size: contain;
 			background-image:url('@{url-path-img}/b-top-header-logo.png');
+			
+			@media @media-size-xs {
+				& {
+					display:block;
+					max-width:221px;
+					margin:0 auto;
+				}
+			}
 		}
 	}
 	
 	.contact-cont {
 		float:right;
+		
+		@media @media-size-xs {
+			& {
+				display:block;
+				float:initial;
+			}
+		}
 		
 		.icon-cont {
 			display:inline-block;
@@ -31,6 +55,13 @@
 				height:25px;
 				vertical-align:middle;
 				margin-left:1.5em;
+				
+				@media @media-size-xs {
+					& {
+						margin-left:0em;
+						margin-right:1.5em;
+					}
+				}
 			
 				&.phone {
 					font-family: 'Roboto Condensed';
@@ -43,6 +74,14 @@
 					#site.bold();
 					padding-left:2.25em;
 					margin-right:1.5em;
+					
+					@media @media-size-xs {
+						& {
+							display:block;
+							float:initial;
+							margin:1em auto;
+						}
+					}
 				}
 				
 				&.fb {
@@ -72,6 +111,13 @@
 		.lang-cont {
 			display:inline-block;
 			margin-left:5em;
+			
+			@media @media-size-xs {
+				& {
+					float:right;
+					margin-top:2em;
+				}
+			}
 			
 			.item {
 				#site.size(1.6em);

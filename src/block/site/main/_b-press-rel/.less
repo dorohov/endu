@@ -6,6 +6,13 @@
 		#site.color(#333333);
 		#site.size(3.6em);
 		margin:1em 0;
+		
+		@media @media-size-xs {
+			& {
+				text-align:center;
+				margin:1em 0em;
+			}
+		}
 	}
 	.col-item {
 		#site.size(1.4em);
@@ -13,9 +20,21 @@
 		#site.color(#333333);
 		padding-right:6em;
 		
+		@media @media-size-xs {
+			& {
+				padding-right:0em;
+			}
+		}
+		
 		p {
 			margin:0 0 1em 0;
 			padding:0;
+			
+			@media @media-size-xs {
+				& {
+					margin:1em;
+				}
+			}
 		}
 		a {
 			#site.color(#0962ac);
@@ -31,6 +50,12 @@
 		position:relative;
 		margin:2.4em 0;
 		
+		@media @media-size-xs {
+			& {
+				#site.size(1.8em);
+			}
+		}
+		
 		&:before {
 			content:'';
 			position:absolute;
@@ -40,6 +65,12 @@
 			#site.h(1px);
 			#site.w(100%);
 			z-index:1;
+			
+			@media @media-size-xs {
+				& {
+					content:none;
+				}
+			}
 		}
 		
 		span {
@@ -49,11 +80,24 @@
 			#site.color(#333333);
 			#site.bold();
 			#site.bg(#f6f6f6);
+			
+			@media @media-size-xs {
+				& {
+					padding:0em;
+				}
+			}
 		}
 	}
 	
 	.investor-list {
 		.item {
+			
+			@media @media-size-xs {
+				& {
+					padding:2em 1em;
+				}
+			}
+			
 			.img {
 				float:left;
 				display:inline-block;
@@ -62,6 +106,13 @@
 					border-radius:50%;
 					#site.w(8.2em);
 					#site.h(8.2em);
+					
+					@media @media-size-xs {
+						& {
+							#site.w(4.6em);
+							#site.h(4.6em);
+						}
+					}
 				}
 			}
 			.name {
@@ -70,12 +121,23 @@
 				#site.color(#333333);
 				#site.bold();
 				margin:1em 1em 0.5em 1em;
+				
+				@media @media-size-xs {
+					& {
+						margin:0em 0em;
+					}
+				}
 			}
 			.position {
-				
 				#site.size(1.4em);
 				#site.color(#666666);
 				margin-left: 1.2em;
+				
+				@media @media-size-xs {
+					& {
+						margin-left:0em;
+					}
+				}
 			}
 		}
 	}

@@ -5,6 +5,13 @@
 		margin-top:-9em;
 		padding-bottom:6em;
 		
+		@media @media-size-xs {
+			& {
+				margin-top:0em;
+				padding:0em;
+			}
+		}
+		
 		.item {
 			position:relative;
 			
@@ -14,6 +21,26 @@
 				.product:nth-child(1), .product:nth-child(2) {
 					.white {
 						height:46.5em;
+						
+						@media @media-size-xs {
+							& {
+								height:initial;
+							}
+						}
+						
+						@media @media-size-sm {
+							& {
+								padding-left:0;
+								padding-right:0;
+							}
+						}
+						
+						@media @media-size-md {
+							& {
+								padding-left:0;
+								padding-right:0;
+							}
+						}
 					}
 				}
 				
@@ -21,12 +48,24 @@
 					position:absolute;
 					left:0;
 					top:0;
+					
+					@media @media-size-xs {
+						& {
+							position:relative;
+						}
+					}
 				}
 				
 				.product:nth-child(2) {
 					position:absolute;
 					left:0;
 					bottom:0;
+					
+					@media @media-size-xs {
+						& {
+							position:relative;
+						}
+					}
 				}
 			}
 			
@@ -34,9 +73,21 @@
 				display:block;
 				padding:1em;
 				
+				@media @media-size-sm {
+					& {
+						padding:0.5em;
+					}
+				}
+				
+				@media @media-size-md {
+					& {
+						padding:0.5em;
+					}
+				}
+				
 				&:hover {
 					.white {
-						box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.3);
+						box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.5);
 					}
 				}
 				
@@ -44,6 +95,12 @@
 					#site.bg(@c-hex-w);
 					padding:2em;
 					box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+					
+					@media @media-size-sm {
+						& {
+							padding:0.5em;
+						}
+					}
 					
 					.img {
 						display:block;
@@ -54,6 +111,25 @@
 						img {
 							display:block;
 							margin:3em auto;
+							
+							@media @media-size-xs {
+								& {
+									max-width:100%;
+								}
+							}
+							
+							@media @media-size-sm {
+								& {
+									max-width:100%;
+								}
+							}
+							
+							@media @media-size-md {
+								& {
+									max-width:100%;
+								}
+							}
+							
 						}
 					}
 					.title {
