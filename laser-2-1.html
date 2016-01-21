@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>FE CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+	<meta HTTP-EQUIV="Cache-Control" content="no-cache" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link type="image/x-icon" href="/favicon.ico" rel="icon" />
+
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+	<link href="css/site.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+	<script src="js/jquery.min.js" ></script>
+
+	<script src="js/bootstrap.min.js" ></script>
+	<script src="js/fecss.js" ></script>
+	<script src="js/storage.js" ></script>
+
+	<script src="js/jquery-plugin/jquery.jqfeChangeClassEvent.js" ></script>
+	<script src="js/jquery-plugin/jquery.jqfeScrollTo.js" ></script>
+
+	<script src="js/document-ready.js" ></script>
+
+	<script>
+		$(document).ready(function() {
+			$('img').addClass('img-responsive');
+			var url = window.location.pathname;
+			$('.navbar-nav a[href="'+url+'"]').parent().addClass('active');	
+			$('.carousel .item').eq('0').addClass('active');	
+		})
+	</script>
+
+</head>
+<body class="fecss full-height fe-dbg " >
+	
+	
+	
+	<div class="fluid-block b-top-header" >
+		<div class="adaptive-block grid grid-12 " >
+			<div class="grid-row" >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+					<div class="logo-cont" >
+						<a href="/" ><span class="logo" ></span></a>
+					</div>
+					<div class="contact-cont" >
+						
+						<div class="icon-cont" >
+							<a class="item phone" href="tel:+74952257624" >+7 (495) 225-76-24</a>
+							<a class="item fb " href="https://www.facebook.com/pages/Endurance/1399951053640252" ></a>
+							<a class="item twi " href="https://twitter.com/reangeorge" ></a>
+							<a class="item inst " href="https://instagram.com/endurancerobots/" ></a>
+							<a class="item lnkin " href="https://www.periscope.tv/reangeorge" ></a>
+						</div>
+						
+						<div class="lang-cont" >
+							<a class="item ru active" href="http://endurancerobots.com/about-endurance-3/" >Ru</a>
+							<a class="item ru " href="http://endurancerobots.com/about-endurance/" >En</a>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="clear" ></div>
+			
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="fluid-block b-top-menu" >
+		<div class="adaptive-block grid grid-12 " >
+			<div class="grid-row" >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+					<div class="menu d-t" >
+						<div class="d-t-r" >
+							<div class="d-t-c " >								
+								<div class="hoverdown" >
+									<a class="link" href="#link" >О нас</a>
+									<div class="viewonhover" >
+										<ul>
+											<li><a class="link" href="/team.html" >Команда</a></li>
+											<li><a class="link" href="/office.html">Офисы</a></li>
+											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/kontakty/ ">Контакты</a></li>
+											<li><a class="link" href="/about.html" >Наши принципы</a></li>
+											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/socialnye-seti/" >Социальные сети</a></li>
+											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/podpisatsya/" >Подписаться</a></li>
+											<li><a class="link" href="/vacancy.html" >Вакансии</a></li>
+											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/video/" >Видео</a></li>
+											<li><a class="link" href="/calendar.html" >Наш календарь</a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+							<div class="d-t-c" >							
+								<div class="hoverdown" >
+									<a class="link" href="#link" >Роботы</a>
+									<div class="viewonhover" >
+										<ul>
+											<li><a class="link" href="http://endurancerobots.com/kvadrokopter/" >Дрон</a></li>
+											<li><a class="link" href="http://endurancerobots.com/sistema-teleprisutstviya/" >Телеприсутствие</a></li>
+											<li><a class="link" href="http://endurancerobots.com/malyj-robot/" >Малый робот</a></li>
+											<li><a class="link" href="http://endurancerobots.com/malyj-kolesnyj-robot-rash-2-2/" >Малый колесный робот Rash 2</a></li>
+											<li><a class="link" href="/oficiant.html" >Робот – официант</a></li>
+											<li><a class="link" href="/selfibot.html" >СелфиБот – специальный гаджет для мобильных устройств</a></li>
+											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/produkty/truckbot/" >Truckbot</a></li>
+											<li><a class="link" href="http://endurancerobots.com/kvadrokopter/" >Модифицированный квадрокоптер</a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+							<div class="d-t-c w025" >
+								
+								<div class="hoverdown" >
+									<a class="link" href="#link" >Лазерная резка и гравировка</a>
+									<div class="viewonhover" >
+										<ul>
+											<li><a class="link" href="/laser-2-1.html" >2.1 Ваттный лазер</a></li>
+											<li><a class="link" href="http://endurancerobots.com/3-5-vattnyj-lazer/" >3.5 Ваттный лазер</a></li>
+											<li><a class="link" href="http://endurancerobots.com/gravirovalnyj-stol/" >Endurance Wanhao лазерный диодный гравер / резак</a></li>
+											<li><a class="link" href="http://endurancerobots.com/endurance-diy-nastolnyj-lazernyj-graver-rezak/" >Endurance DIY настольный лазерный гравер / резак</a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+							<div class="d-t-c" >
+								<a class="link" href="http://endurancerobots.com/konsalting/" >Консалтинг</a>
+							</div>
+							<div class="d-t-c" >
+								<a class="link" href="#link" >Инвесторам</a>
+							</div>
+							<div class="d-t-c" >
+								<a class="link" href="http://endurancerobots.com/about-endurance-3/video/" >Видео</a>
+							</div>
+							<div class="d-t-c" >
+								<a class="link" href="http://endurancerobots.com/about-endurance-3/kontakty/" >Контакты</a>
+							</div>
+							<div class="d-t-c " >
+								<a class="" href="#link" ><span class="search-icon" ></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear" ></div>
+			
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="fluid-block navbar-main" >
+	<div class="adaptive-block grid grid-12 flex " >		
+		<div class="grid-row" >							
+			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
+				<ul class="navbar-nav">
+					<li class="navbar-nav__item">
+						Лазерные граверы
+						<ul class="navbar-nav_item-list">
+							<li><a href="/wanhao.html">Wanhao</a></li>
+							<li><a href="/diy.html">Wanhao DIY</a></li>
+						</ul>
+
+					</li>
+					<li class="navbar-nav__item">
+						Диодные лазеры
+						<ul class="navbar-nav_item-list">
+							<li><a href="/laser-2-1.html">2.1</a></li>
+							<li><a href="/laser-3-5.html">3.5</a></li>
+							<li><a href="/laser-5.html">5</a></li>
+						</ul>
+					</li>
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="slider-site fluid-block">
+	<div id="carousel-example-generic" class="carousel slide slider__carousel" data-ride="carousel">
+		<div class="carousel-inner hidden-xs">
+			<div class="item ">
+				<img src="/img/laser-2-1/laser-2-1-slider-item3.jpg" alt="">	
+			</div>
+			<div class="item ">
+				<img src="/img/laser-2-1/laser-2-1-slider-item1.jpg" alt="">	
+			</div>
+			<div class="item ">
+				<img src="/img/laser-2-1/laser-2-1-slider-item2.jpg" alt="">	
+			</div>
+			<div class="item ">
+				<img src="/img/laser-2-1/laser-2-1-slider-item4.jpg" alt="">	
+			</div>
+		</div>
+	
+		<div class="slider-flex">
+			<div class="adaptive-block grid grid-12 flex ">
+				<div class="grid-row">
+					<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-5 f-box">
+						<div class="slider-captions">
+							<div class="slider-captions__heading">Диодный лазер Endurance L-cheapo</div>
+							<div> 
+								<div>
+									<div class="dropdown slider-captions__dropdown">
+										<a id="dLabel" data-target="#" href="/laser-2-1.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2.1 Вт<span class="caret"></span>
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="dLabel">
+											<li><a href="/laser-3-5.html">3.5 Вт</a></li>
+											<li><a href="/laser-5.html">5 Вт</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="slider-captions__cost"><span>18 900</span></div>
+								<div>&nbsp;</div>
+								<div>Специальная цена для РФ</div> 
+								<div>&nbsp;</div>
+								<div>&nbsp;</div>
+								<div><a href="#" class="btn-red slider-captions__btn">Купить</a></div> 
+							</div>
+							<ol class="carousel-indicators hidden-xs">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div> 
+
+	<div class="fluid-block content-second-block content-block laser__content-block bg-white" >
+	<div class="adaptive-block grid grid-12 flex " >		
+		<div class="grid-row" >							
+			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
+				<h1 class="heading-block laser__heading-block">Endurance представляет новый лазерный резак для 3D-принтера</h1> 
+				<div class="laser__note-block">					
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 video-box" >
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/mDxQXpOo6xo" frameborder="0" allowfullscreen></iframe>
+						</div>	
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 laser__note" >
+							<div>Наш диодный лазер превращает 3D-принтер или ЧПУ станок в машину для резки и гравировки.
+							</div>
+							<div>Диодные лазеры Endurance L-cheapo (3.5 Вт) оснащены ШИМ контроллером, который позволяет изменять выходную мощность во время гравировки. Контроллер – это 3-ий проводок, подсоединяемый к 3D-принтеру или ЧПУ станку.</div>
+							<div>Настройка не вызывает трудностей:</div>
+							<ul>
+								<li>Подсоедините белый провод к ШИМ выходу панели управления.</li>
+								<li>Настройте частоту ШИМ на max 10 КГц.</li>
+								<li>Далее руководствуйтесь инструкцией по использованию панели управления.</li>
+								<li>Следует помнить, что при мощности ниже 15% лазер не включается.</li>
+							</ul>
+							<div>Превратите ваш 3D-принтер или ЧПУ станок в гравировальную машину. Гравируйте с удовольствием.
+							</div>						
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-xs-12">
+							<div><b class="red">Предупреждение.</b> Следует, однако, помнить, что смотреть на свет лазера без защитных очков опасно для зрения. Как говорят: «Не заглядывайте в лазер уцелевшим глазом». Новый лазер мощнее и эффективнее предыдущего!</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="laser__btn-flex btn-flex">
+							<a href="" class="btn-red _l-btn-flex__item">Видео гравировки c L-cheapo</a>
+							<a href="" class="btn-main _l-btn-flex__item">Промо-видео</a>
+							<a href="" class="btn-main _l-btn-flex__item">Видео помощь по установке L-cheapo</a>
+						</div>
+						<div class="laser__advantages">
+							<div class="heading-block__line">						
+								<h3 class="heading-block _l-advantages__heading-block">Endurance L-cheapo</h3>						
+							</div>
+							<div class="_l-advantages__flex">
+								<div class="_l-advantages__item icon-hierarchical">
+									Совместимо с большинством<br>3D-принтеров и ЧПУ устройств
+								</div>
+								<div class="_l-advantages__item icon-wrench">Легко устанавливается<br> и настраевается</div>
+								<div class="_l-advantages__item icon-battery">Не нуждается в отдельном <br>источнике питания</div>
+								<div class="_l-advantages__item icon-electric">Не требует<br> дополнительного охлаждения</div>
+								<div class="_l-advantages__item icon-power">Возможность понижения мощности для гравировки полутонов</div>
+							</div>
+						</div>						
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="fluid-block content-gallery laser__gallery bg-white-dark" >
+	<div class="adaptive-block grid grid-12 flex " >		
+		<div class="grid-row" >							
+			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
+				<h3 class="heading-block _l-gallery__heading-block">Дарите уникальные подарки, создавайте авторские гравировки</h3>
+				<div class="note-flex _b-gallery__note col2"> 
+					<div>Наше приспособление будет полезным, как для профессиональных художников, так и для любителей, желающих нанести логотип на свой очередной прототип или украсить любимый гаджет какой-то своей оригинальной гравировкой. Поскольку наше устройство позволяет работать с кожей, это открывает новые возможности для воплощения самых замысловатых фантазий художника в реальность. Наш лазер может оплавлять поверхность материала, создавая произвольный 3-х мерный рельеф.</div>
+					<div>Однако следует отметить, что под воздействием высоких температур большинство материалов чернеет. L-cheapo достаточно мощный, чтобы резать акрил, дерево, фанеру, картон и кожу до 3/16″ (4,76 мм) толщиной. (В некоторых опытах нам даже удавалось резать дерево и фанеру до 8,5 мм толщиной при многократном прохождении лазерного луча.)</div>
+				</div>
+
+		        <div id="slider" class="flexslider">
+		          <ul class="slides">
+		            <li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_lemon.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_donut.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_caramel.jpg" />
+		  	    		</li>
+		            <li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_lemon.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_donut.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_caramel.jpg" />
+		  	    		</li>
+		            <li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_lemon.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_donut.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_caramel.jpg" />
+		  	    		</li>
+		          </ul>
+		        </div>
+		        <div id="carousel" class="flexslider-navbar flexslider ">
+		          <ul class="slides">
+		            <li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_lemon.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_donut.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_caramel.jpg" />
+		  	    		</li>
+		            <li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_lemon.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_donut.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_caramel.jpg" />
+		  	    		</li>
+		            <li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_lemon.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_donut.jpg" />
+		  	    		</li>
+		  	    		<li>
+		  	    	    <img src="/plugins/flexSlider/images/kitchen_adventurer_caramel.jpg" />
+		  	    		</li>
+		          </ul>
+		        </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+				<link rel="stylesheet" href="/plugins/flexSlider/css/flexslider.css" type="text/css"  />
+  <script type="text/javascript">
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+  </script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script defer src="/plugins/flexSlider/js/jquery.flexslider.js"></script>
+  <script src="/plugins/flexSlider/js/jquery.easing.js"></script>
+  <script src="/plugins/flexSlider/js/jquery.mousewheel.js"></script>
+  <script defer src="/plugins/flexSlider/js/demo.js"></script>
+
+
+
+	<div class="fluid-block laser__delivery bg-white" >
+	<div class="adaptive-block grid grid-12 flex " >		
+		<div class="grid-row" >							
+			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
+				<div class="dropdown _l-delivery__dropdown">
+					<div id="dDelivery" class="_l-delivery__select" data-toggle="dropdown" data-target="#">					
+						Компания Endurance не только продает лазер, но и осуществляет полную техническую поддержку по наладке и установке
+						<span class="caret"></span>
+					</div>
+					<div class="dropdown-menu _l-delivery__dropdown-menu"  aria-labelledby="dDelivery">
+						<div class="note-flex _b-gallery__note col2"> 
+							<div>Наше приспособление будет полезным, как для профессиональных художников, так и для любителей, желающих нанести логотип на свой очередной прототип или украсить любимый гаджет какой-то своей оригинальной гравировкой. Поскольку наше устройство позволяет работать с кожей, это открывает новые возможности для воплощения самых замысловатых фантазий художника в реальность. Наш лазер может оплавлять поверхность материала, создавая произвольный 3-х мерный рельеф.</div>
+							<div>Однако следует отметить, что под воздействием высоких температур большинство материалов чернеет. L-cheapo достаточно мощный, чтобы резать акрил, дерево, фанеру, картон и кожу до 3/16″ (4,76 мм) толщиной. (В некоторых опытах нам даже удавалось резать дерево и фанеру до 8,5 мм толщиной при многократном прохождении лазерного луча.)</div>
+						</div>
+					</div>
+				</div>
+				<div class="_l-delivery__panel">
+					<h3 class="heading-block delivery-panel__heading"><span class="red">Доставка и установка по Москве бесплатная</span> Также доставка по всему миру</h3>
+					<div class="btn-flex">
+						<a href="#" class="btn-main delivery-btn__red">Купить</a>
+						<a href="#" class="btn-main delivery-btn__blue">Обратный звонок</a>
+						<a href="#" class="btn-main delivery-btn__green">Запросить презентацию</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="fluid-block help-block laser__help bg-white-dark" >
+	<div class="adaptive-block grid grid-12 flex " >		
+		<div class="grid-row" >							
+			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
+				<h3 class="heading-block _l-help__heading-block">Информационная помощь по гравировке</div>
+				<div class="note-flex col3 _l-help__flex">
+					<div>
+						<ul class="_l-help__nav">
+							<li class="active"><a href="#">Как сделать гравировку. Полная инструкция</a></li>
+							<li><a href="#">Решение</a></li>
+							<li><a href="#">Зачем</a></li>
+							<li><a href="#">Для гравировки необходимо</a></li>
+							<li><a href="#">Примеры Gcode для гравировок лазером</a></li>
+							<li><a href="#">Таблица материалов для резки и гравировки</a></li>
+							<li><a href="#">Кому это нужно</a></li>
+							<li><a href="#">Характеристики</a></li>
+							<li><a href="#">Преимущества</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul class="_l-help__nav">
+							<li><a href="#">Характеристики лазерного гравера</a></li>
+							<li><a href="#">Разрешающая способность лазера</a></li>
+							<li><a href="#">Режет и гравирует</a></li>
+							<li><a href="#">На чем можно делать гравировку</a></li>
+							<li><a href="#">Что еще можно делать, имея лазерный гравер</a></li>
+							<li><a href="#">Для чего</a></li>
+							<li><a href="#">Видео урок</a></li>
+							<li><a href="#">Безопасность</a></li>
+							<li><a href="#">Выгода</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul class="_l-help__nav">
+							<li><a href="#">Лазерный гравер в действии</a></li>
+							<li><a href="#">Примеры видео</a></li>
+							<li><a href="#">Примеры гравировок</a></li>
+							<li><a href="#">Специально для фотографов</a></li>
+							<li><a href="#">Лазерные граверы для дома и офиса</a></li>
+							<li><a href="#">Endurance Wanhao DuPlicator i3: многофункциональная гравировальная установка</a></li>
+							<li><a href="#">Фото предыдущих версий</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+
+	
+	
+	<div class="fluid-block b-bottom-footer" >
+		
+		<div class="adaptive-block grid grid-12 contact-cont" >
+			<div class="grid-row" >
+				
+				<div class="clmn-4 clmn-xs-12 clmn-sm-6 clmn-md-4 clmn-lg-4 write-to-me " >
+					<div class="title" >Пишите нам</div>
+					<div class="items" >
+						<a class="" href="mailto:info@endurancerobots.com" >info@endurancerobots.com</a>
+					</div>
+				</div>
+				
+				<div class="clmn-4 clmn-xs-12 clmn-sm-6 clmn-md-4 clmn-lg-4 subscribe " >
+					<div class="title" >Подпишитесь на нашу e-mail рассылку</div>
+					<div class="items" >
+						<form >
+							<input type="text" placeholder="Ваш E-mail" />
+							<input type="submit" value="Подписаться" />
+						</form>
+					</div>
+				</div>
+				
+				<div class="clmn-4 clmn-xs-12 clmn-sm-12 clmn-md-4 clmn-lg-4 social-cont " >
+					<div class="title" >Следите за нами там, где удобно</div>
+					<div class="items" >
+						<a class="s-icon i1 hover-scale" href="#link" ></a>
+						<a class="s-icon i2 hover-scale" href="#link" ></a>
+						<a class="s-icon i3 hover-scale" href="#link" ></a>
+						<a class="s-icon i4 hover-scale" href="#link" ></a>
+						<a class="s-icon i5 hover-scale" href="#link" ></a>
+						<a class="s-icon i6 hover-scale" href="#link" ></a>
+						<a class="s-icon i7 hover-scale" href="#link" ></a>
+						<a class="s-icon i8 hover-scale" href="#link" ></a>
+						<a class="s-icon i9 hover-scale" href="#link" ></a>
+						<a class="s-icon i10 hover-scale" href="#link" ></a>
+					</div>
+				</div>
+				
+				<div class="clear" ></div>
+			
+			</div>
+		</div>
+
+		<div class="adaptive-block grid grid-12 copy-cont" >
+			<div class="grid-row" >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+					<div class="copy" >© Endurance 2015 Все права защищены</div>
+					<div class="created-by" >
+						<a href="http://dorohovdesign.ru/" ></a>
+					</div>
+
+					<div class="clear" ></div>
+				</div>
+				
+				<div class="clear" ></div>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+
+</body>
+</html>

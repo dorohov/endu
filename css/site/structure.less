@@ -1,3 +1,119 @@
 body {
-	
+	color: lighten(@black, 40%);
+}
+.bg-white{
+	background: @white!important;
+}
+.white{
+	color: @white!important;
+}
+.bg-white-dark{
+	background: darken(@white, 5.5%)!important; //#f1f1f1
+}
+.fecss .adaptive-block {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.heading-block{
+	.mixin-headings(
+		@font-family: @roboto, 
+		@font-size: 24px, 
+		@line-height: 36px, 
+		@color: lighten(@black, 20%)
+	);
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 20px; 
+	@media @media-size-sm{
+		font-size: 22px !important;
+		line-height: 34px !important;
+	}
+	@media @media-size-xs{
+		font-size: 18px !important;
+		line-height: 30px !important;
+	}
+}
+.heading-block__line{
+	text-align: center;
+	position: relative;
+	margin-bottom: 25px;
+	&:before{
+		content: '';
+		height: 1px;
+		width: 100%;
+		left: 0px;
+		top: 50%;
+		background: darken(@white, 18%); //#d1d1d1
+		position: absolute;
+		.rotation-translate(@deg:0deg, @x:0px, @y:-50%);
+	}
+	.heading-block{
+		display: inline-block;
+		margin: 0;
+		position: relative;
+		z-index: 10;
+	}
+}
+.red{
+	color: rgb(255, 115, 115);
+}
+.vacancy__nav-tabs{
+	.clearfix();
+}
+.btn-main{
+    display: block;
+	border-radius: 10px; 
+	border: 1px solid lighten(@black, 53.8%); //#898989
+	color: lighten(@black, 20%);
+    padding: 8px 20px;
+    text-align: center;
+    &:hover,
+    &:focus{
+    	color: @blue;
+    	border-color: @blue;
+    }
+} 
+.btn-red{
+	display: block;
+	border-radius: 10px;
+	background: rgb(255, 102, 102);
+	color: @white;
+    padding: 8px 20px;
+	text-align: center;
+	&:hover,
+	&:focus{
+		text-decoration: none;
+		background: lighten(rgb(255, 102, 102), 2%);
+		color: @white;
+	}
+}
+.content-second-block{
+	font-size: 14px;
+	line-height: 20px;
+	ul{
+		padding-left: 25px;
+		margin: 5px 0;
+	}
+}
+.video-box{
+	iframe{
+		width: 100%;
+		margin-bottom: 10px;
+
+	}
+}
+.content-gallery{
+	//opacity: @opacity;	
+    padding: 45px 0;
+}
+.note-flex{
+	.flex-display(@display: flex);
+	.justify-content(@justify: space-between);
+	.flex-wrap(@wrap: wrap);	
+}
+.btn-flex{
+	.flex-display(@display: flex);
+	.justify-content(@justify: center);
+	.flex-wrap(@wrap: wrap);
+	//margin-bottom: 25px;
 }

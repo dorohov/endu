@@ -1,16 +1,69 @@
-	.include-custom-font(@family: Arial, @weight: normal, @style: normal){
-		@font-face{
-			/*
-			font-family: "PFAgoraSansPro";
-			
-			src:url('fonts/@{family}.eot');
-			src:url('fonts/@{family}.eot?#iefix') format('embedded-opentype'),
-				url('fonts/@{family}.woff') format('woff'),
-				url('fonts/@{family}.ttf') format('truetype'),
-				url('fonts/@{family}.svg#icon') format('svg');
+	@roboto: 'Roboto', sans-serif;
+	@icon-base: flaticon;
+	@agora: agorasansproregular-webfont;
+	@agora-black: agorasansproblack-webfont;
+	.include-custom-font(@family: @icon-base, @weight: normal, @style: normal){
+		@font-face{			
+			font-family: "@{family}";			
+			src:url('/fonts/@{family}.eot');
+			src:url('/fonts/@{family}.eot?#iefix') format('embedded-opentype'),
+				url('/fonts/@{family}.woff') format('woff'),
+				url('/fonts/@{family}.ttf') format('truetype'),
+				url('/fonts/@{family}.svg#icon') format('svg');
 			font-weight: @weight;
-			font-style: @style;
-			*/
+			font-style: @style;		
 		}
 	}
+	.include-custom-font(@family: @icon-base, @weight: normal, @style: normal);
+	.include-custom-font(@family: @agora, @weight: normal, @style: normal);
+	.include-custom-font(@family: @agora-black, @weight: normal, @style: normal);
+	.mixin-headings(
+		@font-family: @roboto, 
+		@font-size: 20px, 
+		@line-height: 26px, 
+		@color: @black)
+	{
+		font-family: @font-family;
+		font-size: @font-size;
+		line-height: @line-height;
+		color: @color;
+	} 
 	
+
+	@icon-battery: 		"\e002";
+	@icon-bears: 		"\e003";
+	@icon-bodyparts: 	"\e004";
+	@icon-business: 	"\e005";
+	@icon-call: 		"\e006";
+	@icon-cameras: 		"\e007";
+	@icon-pcscreen: 	"\e008";
+	@icon-electric: 	"\e009";
+	@icon-envelopes: 	"\e00a";
+
+
+	@icon-grandmother: 	"\e00d";
+	@icon-team: 		"\e00e";
+	@icon-gymnast: 		"\e00f";
+	@icon-hierarchical: "\e010";
+	@icon-inspiration: 	"\e011";
+
+
+
+
+	@icon-moon: 		"\e016"; 
+	@icon-move: 		"\e017"; 
+	@icon-paint: 		"\e018"; 
+
+
+	@icon-playbutton: 	"\e01b"; 
+	@icon-power: 		"\e01c"; 
+	@icon-pur: 			"\e01d"; 
+	@icon-ruble: 		"\e01e"; 
+	@icon-cal: 		 	"\e01f";
+	@icon-search: 		"\e020";
+	@icon-shine: 		"\e021";
+	@icon-transport: 	"\e022";
+
+	@icon-wireless: 	"\e024"; 
+	@icon-world: 		"\e025"; 
+	@icon-wrench: 		"\e026"; 

@@ -1,0 +1,338 @@
+.slider-site{
+	opacity: @opacity;
+	position: relative;
+	background: #0B0B0B;
+	img{
+		margin: 0 auto;
+	} 
+}
+.slider__carousel{	
+	@media @media-size-lg{
+		min-height: 650px;
+	}
+	@media @media-size-md{		
+		min-height: 550px;
+	}
+	@media @media-size-sm{		
+		min-height: 450px;
+	}			
+	@media @media-size-xs{				
+		min-height: 350px;
+	}
+}
+.slider-flex{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+	.flex-display(@display: flex);
+	.justify-content(@justify: flex-start);  
+	.align-items(@align: center);
+	@media @media-size-xs{
+		position: relative;
+	}
+} 
+.slider-captions{
+	color: darken(@white, 20%);
+	font-size: 14px;
+	line-height: 20px; 
+	position: relative;
+	@media @media-size-xs{		
+	    max-width: 250px;
+	    margin: 20px auto 35px;
+	    text-align: center;
+	}
+}
+.slider-captions__heading{
+	margin-bottom: 45px;
+	font-size: 48px; 
+	line-height: 60px;
+	color: @white;
+	font-weight: 900;	
+	@media @media-size-md{
+		margin-bottom: 35px;
+		font-size: 38px; 
+		line-height: 50px;
+	}
+	@media @media-size-sm{
+		margin-bottom: 25px;
+		font-size: 28px; 
+		line-height: 40px;
+	}
+	@media @media-size-xs{
+		margin-bottom: 15px;
+		font-size: 18px; 
+		line-height: 30px;
+	}
+}
+.slider-captions__dropdown{
+	display: inline-block;
+	max-width: 180px;
+	width: 100%;
+	margin-bottom: 30px;
+	> a{
+		border: 2px solid @white;
+		font-size: 30px; 
+		line-height: 47px;
+		color: @white;
+		font-weight: 900;
+		display: inline-block;
+		border-radius: 50px;
+		padding: 0 20px;
+		text-align: center;
+		background: @black;
+		position: relative;
+		z-index: 1050;
+		width: 100%;
+		&:hover{
+			color: @blue;
+			border-color: @blue;
+			text-decoration: none;
+		}
+		&:focus{
+			text-decoration: none;
+		}	
+	}
+	@media @media-size-xs{
+		>a{
+			font-size: 20px; 
+			line-height: 37px;
+		}
+	}
+	&.open{
+		> a{
+			color: @blue;
+			border-color: @blue;			
+		}
+	}
+	.caret{
+		border-top: 7px dashed;
+		border-right: 7px solid transparent;
+		border-left: 7px solid transparent;
+		margin-left: 5px;
+	}
+	.dropdown-menu{
+		top: 50%;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		right: 0;
+		min-width: inherit;
+		border: 2px solid @blue;
+		border-radius: 0 0 20px 20px;
+		background: @black;
+		> li{
+			> a{
+				color: @white;
+				font-weight: 900;
+				font-size: 20px;
+				text-align: center;
+				&:hover,
+				&:focus{
+					text-decoration: none;
+					color: @blue;
+					background: none;
+				}
+			}
+		}
+	}
+}
+.slider-captions__cost{
+	span{
+		font-size: 60px;
+		line-height: 60px;
+		color: @white;
+		font-weight: 900;
+    	display: inline-block;
+   		margin-right: 11px;
+		@media @media-size-md{
+			font-size: 50px;
+			line-height: 50px;
+		}
+		@media @media-size-sm{
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+}
+.slider-captions__btn{
+	max-width: 180px;
+	border-radius: 30px;
+	font-size: 20px;
+	padding: 15px 20px; 
+	font-weight: 700;
+
+	@media @media-size-xs{
+		margin: 0 auto;
+	}
+}
+
+
+.bot-slider{
+	//opacity: @opacity;
+	position: relative;
+	img{margin: 0 auto}	
+	@media @media-size-md{		
+		top: 0;
+		background: rgb(193, 209, 210);
+	}
+	@media @media-size-sm{		
+		background: rgb(193, 209, 210);
+		top: 0;
+	}
+	@media @media-size-xs{		
+		background: rgb(193, 209, 210);
+		top: 0;
+	}
+
+}
+//selfibot-slider
+.selfibot-slider{
+	background: url(/img/selfibot/bg-slider-selfibot.jpg) no-repeat center 40px;
+	top: -30px;
+	z-index: 10;
+	img{margin: 0 auto}	
+	@media @media-size-md{		
+		top: 0;
+		background: rgb(193, 209, 210);
+	}
+	@media @media-size-sm{		
+		background: rgb(193, 209, 210);
+		top: 0;
+	}
+	@media @media-size-xs{		
+		background: rgb(193, 209, 210);
+		top: 0;
+	}
+
+}
+._s-carousel-inner{
+	@media @media-size-md{	
+		top: -35px;
+		position: absolute;
+		img{	
+			max-width: 992px!important;
+		}			
+	}
+	@media @media-size-sm{	
+		top: -28px;
+		position: absolute;
+		img{	
+			max-width: 768px!important;
+		}			
+	}
+}
+.selfibot-slider__carousel{	
+	@media @media-size-lg{
+		min-height: 620px;
+	}
+	@media @media-size-md{		
+		min-height: 470px;
+	}
+	@media @media-size-sm{		
+		min-height: 366px;
+	}			
+	@media @media-size-xs{				
+		min-height: 320px;
+	}
+}
+.selfibot__slider-captions{
+	font-size: 22px;
+	color: lighten(@black, 9.8%); //#191919
+	line-height: 30px;
+	font-weight: 300;
+	@media @media-size-md{
+    	font-size: 20px;
+    	line-height: 26px;
+	}	
+	@media @media-size-sm{
+    	font-size: 16px;
+    	line-height: 24px;
+	}	
+	@media @media-size-xs{
+    	font-size: 18px;
+    	line-height: 26px;
+	}	
+}
+.selfibot-slider-captions__heading{
+	font-size: 92px;
+	color: lighten(@black, 9.8%); //#191919
+	@media @media-size-md{
+    	font-size: 62px;
+    	line-height: 62px;
+	}
+	@media @media-size-sm{
+    	font-size: 42px;
+    	line-height: 42px;
+	}
+	@media @media-size-xs{
+    	font-size: 32px;
+    	line-height: 32px;
+	}
+}
+.selfibot-slider-captions__cost span{
+	color: lighten(@black, 9.8%); //#191919
+	&:after{
+		font-family: @icon-base;
+		content: @icon-ruble;
+		display: inline-block;
+		font-size: 25px;
+		margin-left: 10px;
+	}
+	@media @media-size-sm{
+    	font-size: 30px;
+    	line-height: 30px;
+	}
+}
+.selfibot-slider-captions__btn {
+    max-width: 205px;
+    padding: 10px 20px;
+	@media @media-size-sm{    
+		max-width: 175px;
+		padding: 7px 20px;
+		font-size: 18px;
+	}
+}
+.selfibot-carousel-indicators{
+	@media @media-size-sm{    
+		bottom: -40px;
+	}
+	li{
+		margin: 0 5px;
+		&.active{
+			border-color: lighten(@black, 20%);
+		}
+	}
+}
+
+//oficiant-slider
+.oficiant-slider{	
+	background: url(/img/selfibot/bg-slider-selfibot.jpg) no-repeat center 0px;
+}	
+.oficiant-slider__carousel{	
+	@media @media-size-lg{
+		min-height: 530px;
+	}
+	@media @media-size-md{		
+		min-height: 462px;
+	}
+	@media @media-size-sm{		
+		min-height: 357px;
+	}			
+	@media @media-size-xs{				
+		min-height: 320px;
+	}
+}
+.oficiant-carousel-inner{
+	position: absolute;
+	@media @media-size-md{	
+		img{	
+			max-width: 992px!important;
+		}			
+	}
+	@media @media-size-sm{
+		img{	
+			max-width: 768px!important;
+		}			
+	}
+}

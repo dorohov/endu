@@ -29,6 +29,8 @@ $(window).on('resize',function(event){
 $(document).ready(function() {
 
 
+	var url = window.location.pathname;
+	$('.nav-block__link a[href="'+url+'"]').parent().addClass('active');
 [snp tpl="src/_/concat.document-ready.js" ]
 
 
