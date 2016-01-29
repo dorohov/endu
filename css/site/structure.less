@@ -117,3 +117,91 @@ body {
 	.flex-wrap(@wrap: wrap);
 	//margin-bottom: 25px;
 }
+.modal-buy{
+	font-size: 14px;
+	line-height: 24px;
+	.modal-dialog{
+		max-width: 1140px;
+		width: 100%;
+	}
+	.modal-content{
+		//opacity: @opacity;
+		.flex-display(@display: flex);
+		.flex-wrap(@wrap: wrap);
+		padding: 40px 60px; 
+		border-radius: 10px; 
+		> div{
+			padding-left: 15px;
+			padding-right: 15px;
+			width: 50%;			
+    		@media @media-size-xs{
+    			width: 100%;
+    			margin-bottom: 30px;
+    		}	
+		}
+		margin-left: -15px;
+		margin-right: -15px;
+		button.close{
+			font-size: 35px;
+			position: absolute;
+			right: 30px;
+			top: 20px;
+		}
+		.modal-buy__heading{
+			font-size: 36px;
+			line-height: 48px;
+			color: lighten(@black, 20%);
+			text-align: left;
+			font-weight: 900;
+    		@media @media-size-xs{
+    			text-align: center;
+    		}
+		}
+		.modal-buy__note{
+			font-size: 24px;
+			line-height: 38px;
+			font-weight: 700;	
+    		max-width: 360px;
+    		@media @media-size-sm{
+    			font-size: 18px;
+				line-height: 32px;
+    		}		
+    		@media @media-size-xs{
+    			max-width: 100%;
+    			font-size: 18px;
+				line-height: 28px;
+    		}		
+		}
+		.modal__form{
+			.form-control{
+				height: 42px;
+				margin-bottom: 20px;
+				border: 1px solid #898989;
+				border-radius: 0;
+				&:focus{
+					border-color: @black;
+					box-shadow: none;
+				}
+			}
+			textarea{
+				min-height: 105px;
+				max-width: 100%;
+			}
+		}
+		.modal__form-warning{
+			margin-bottom: 25px;
+		}
+		.modal__form-btn{    
+			font-size: 16px;
+			max-width: 175px;
+			width: 100%;
+			border: none;
+			border-radius: 30px;
+			margin-top: 40px;
+    		@media @media-size-xs{
+    			margin-left: auto;
+    			margin-right: auto;
+    		}
+		}
+	}
+}

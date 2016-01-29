@@ -14,8 +14,8 @@
 	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
 	<link type="image/x-icon" href="/favicon.ico" rel="icon" />
 
-	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
 	<link href="css/site.css" rel="stylesheet">
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -34,6 +34,15 @@
 	<script src="js/jquery-plugin/jquery.jqfeScrollTo.js" ></script>
 
 	<script src="js/document-ready.js" ></script>
+
+	<script>
+		$(document).ready(function() {
+			$('img').addClass('img-responsive');
+			var url = window.location.pathname;
+			$('.navbar-nav a[href="'+url+'"]').parent().addClass('active');	
+			$('.carousel .item').eq('0').addClass('active');	
+		})
+	</script>
 
 </head>
 <body class="fecss full-height fe-dbg " >
@@ -81,28 +90,26 @@
 				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
 					<div class="menu d-t" >
 						<div class="d-t-r" >
-							<div class="d-t-c " >
-								
+							<div class="d-t-c " >								
 								<div class="hoverdown" >
 									<a class="link" href="#link" >О нас</a>
 									<div class="viewonhover" >
 										<ul>
-											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/komanda/" >Команда</a></li>
-											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/ofisy/">Офисы</a></li>
+											<li><a class="link" href="/team.html" >Команда</a></li>
+											<li><a class="link" href="/office.html">Офисы</a></li>
 											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/kontakty/ ">Контакты</a></li>
-											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/nashi-principy/" >Наши принципы</a></li>
+											<li><a class="link" href="/about.html" >Наши принципы</a></li>
 											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/socialnye-seti/" >Социальные сети</a></li>
 											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/podpisatsya/" >Подписаться</a></li>
-											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/vakansii/" >Вакансии</a></li>
+											<li><a class="link" href="/vacancy.html" >Вакансии</a></li>
 											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/video/" >Видео</a></li>
-											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/nash-kalendar/" >Наш календарь</a></li>
+											<li><a class="link" href="/calendar.html" >Наш календарь</a></li>
 										</ul>
 									</div>
 								</div>
 								
 							</div>
-							<div class="d-t-c" >
-							
+							<div class="d-t-c" >							
 								<div class="hoverdown" >
 									<a class="link" href="#link" >Роботы</a>
 									<div class="viewonhover" >
@@ -111,8 +118,8 @@
 											<li><a class="link" href="http://endurancerobots.com/sistema-teleprisutstviya/" >Телеприсутствие</a></li>
 											<li><a class="link" href="http://endurancerobots.com/malyj-robot/" >Малый робот</a></li>
 											<li><a class="link" href="http://endurancerobots.com/malyj-kolesnyj-robot-rash-2-2/" >Малый колесный робот Rash 2</a></li>
-											<li><a class="link" href="http://endurancerobots.com/endurance-robot-oficiant-robowaiter/" >Робот – официант</a></li>
-											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/produkty/selfibot/" >СелфиБот – специальный гаджет для мобильных устройств</a></li>
+											<li><a class="link" href="/oficiant.html" >Робот – официант</a></li>
+											<li><a class="link" href="/selfibot.html" >СелфиБот – специальный гаджет для мобильных устройств</a></li>
 											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/produkty/truckbot/" >Truckbot</a></li>
 											<li><a class="link" href="http://endurancerobots.com/kvadrokopter/" >Модифицированный квадрокоптер</a></li>
 										</ul>
@@ -126,7 +133,7 @@
 									<a class="link" href="#link" >Лазерная резка и гравировка</a>
 									<div class="viewonhover" >
 										<ul>
-											<li><a class="link" href="http://endurancerobots.com/lazernyj-rezak-dlya-3d-printerov/" >2.1 Ваттный лазер</a></li>
+											<li><a class="link" href="/laser-2-1.html" >2.1 Ваттный лазер</a></li>
 											<li><a class="link" href="http://endurancerobots.com/3-5-vattnyj-lazer/" >3.5 Ваттный лазер</a></li>
 											<li><a class="link" href="http://endurancerobots.com/gravirovalnyj-stol/" >Endurance Wanhao лазерный диодный гравер / резак</a></li>
 											<li><a class="link" href="http://endurancerobots.com/endurance-diy-nastolnyj-lazernyj-graver-rezak/" >Endurance DIY настольный лазерный гравер / резак</a></li>
@@ -161,133 +168,69 @@
 	</div>
 	
 
-	<div class="fluid-block second-nav-block" >
+	<div class="fluid-block content-second-block content-block contacts-block bg-white " >
 	<div class="adaptive-block grid grid-12 flex " >		
 		<div class="grid-row" >							
 			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
-				<div class="nav-block__heading" >
-					<div>Добро пожаловать в мир роботов и лазеров!</div>
-					<div>Добро пожаловать в  Мир Endurance!</div>
+				<div class="_cb-content">
+					<div>
+						<h1 class="heading-block _cb-content__heading">Свяжитесь с нами<br>удобным для вас способом</h1> 
+						<div class="_cb-content__list">
+							<div class="_cb-content__item icon-skype">
+								<a href="skype:george.fomitchev">george.fomitchev</a>
+							</div>
+							<div class="_cb-content__item icon-envelope">
+								<a href="mailto:gf@endurancerobots.com">gf@endurancerobots.com</a>, <a href="mailto:gfomitchev@gmail.com">gfomitchev@gmail.com</a>
+							</div>
+							<div class="_cb-content__item icon-telephone">
+								<a href="tel:+74952257624">+7 (495) 225-76-24</a>
+							</div>
+							<div class="_cb-content__item icon-sip">
+								sip:george.fomichev@sip.linphone.org
+							</div>
+							<div class="_cb-content__item icon-iphone">
+								<a href="tel:+79162254302">+7(916) 225-43-02</a> (Viber, WhatsApp)
+							</div>
+							<div class="_cb-content__item icon-instag1">
+								<a href="https://www.instagram.com/endurancerobots/" target="_blank">endurancerobots</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<script charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_tRup9LBgnp4p8uFuWlKtdutrGsI_c08&width=100%&height=330&lang=ru_RU&sourceType=constructor"></script>
+							<div class="_cb-content__item icon-map">Россия, г. Москва, (м. Семеновская или Партизанская), Щербаковская, 53 (вход со стороны ул. Мироновская),<br> КПП НПП «Сапфир»</div> 
+					</div>					
 				</div>
-				<div class="nav-block__note">
-					Endurance – быстрорастущий российско-американский технологический стартап. Мы занимаемся разработкой и продажей технологической продукции, в основе которой лежат лазеры, роботы и дроны.
-				</div>
-				<div class="nav-block__link">
-					<div class="nav-block__link-item ">
-						<a href="/about.html" class="icon-pur">Наши принципы</a>
-					</div>
-					<div class="nav-block__link-item">
-						<a href="/contacts.html" class="icon-world">Офисы</a>
-					</div>
-					<div class="nav-block__link-item ">
-						<a href="/team.html" class="icon-team">Команда</a>
-					</div>
-					<div class="nav-block__link-item ">
-						<a href="/vacancy.html" class="icon-business">Вакансии</a>
-					</div>
-					<div class="nav-block__link-item">
-						<a href="/calendar.html" class="icon-cal">Календарь</a>
+				<div class="_cb-info">
+					<div class="_cb-info__heading-block">Юридическая информация <span class="caret"></span></div>
+					<h3 class="heading-block _cb-info__heading">ООО «Безопасные БиоСистемы»</h3> 
+					<div class="_cb-info__content">
+						<div class="_cb-info__item">
+							<div><span class="blue">Юридический адрес:</span></div>
+							<div>129075, г.Москва, ул. Калибровская, д.22Б, кв.52</div>
+							<div><span class="blue">Телефон:</span> +7 (495) 225-76-24</div>
+						</div>
+						<div class="_cb-info__item __item">
+							<div><span class="blue">ИНН:</span> 7717603823</div>
+							<div><span class="blue">КПП:</span> 771701001</div>
+							<div><span class="blue">ОКАТО:</span> 45280572000</div>
+						</div>
+						<div class="_cb-info__item __item">
+							<div><span class="blue">ОГРН:</span> 1077762410868</div>
+							<div><span class="blue">ОКПО:</span> 83220940</div>
+							<div><span class="blue">ОКОГУ:</span> 49013</div> 
+						</div>
+						<div class="_cb-info__item">
+							<div style="margin-bottom: 20px;"><span class="blue">ОКТМО:</span> 45358000</div>
+							<div><span class="blue">ОКВЭД:</span> 72.10, 72.20, 7</div>
+							<div>2.30, 72.40, 72.60</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-	<!-- <div class="fluid-block content-block contacts-block" >
-	<div class="adaptive-block grid grid-12 flex " >		
-		<div class="grid-row" >							
-			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
-				<h1 class="heading-block vacancy__heading-block">Компания Endurance ищет людей, любящих робототехнику так же как и мы, готовых развиваться вместе с нами и работать в целеустремлённом коллективе</h1>
-				
-				<ul class="nav nav-tabs vacancy__nav-tabs">
-					<li class="active"><a href="#vacancy1" data-toggle="tab">Программист</a></li>
-					<li><a href="#vacancy2" data-toggle="tab">Инженер-электрик</a></li>
-					<li><a href="#vacancy3" data-toggle="tab">Евангелист</a></li>
-				</ul>
-				<div class="tab-content vacancy__tab-content">
-					<div class="tab-pane fade in active" id="vacancy1">
-						<div class="grid-row">
-							<div class="clmn-xs-12 clmn-sm-12 clmn-md-6 clmn-lg-6" >
-								<h3 class="vacancy-item__heading">Квалификационные требования</h3>
-								<ul>
-									<li>Опыт работы в робототехнике</li>
-									<li>Знание микроконтроллеров Arduino, Propeller и др.</li>
-									<li>Способность работать руками и головой от начала до конца</li>
-									<li>Знание Android (1.5 — 5.1 версий)</li>
-									<li>Знание Java, Python</li>
-									<li>Знание лазеров CO2 (лазерных диодов)</li>
-									<li>Знание протоколов Bluetooth, ADB, WIFI</li>
-									<li>Понимание современного рынка робототехники</li>
-									<li>Мотивация заниматься роботами и дронами</li> 
-								</ul>
-								<div>Гибкость и мышления и нетривиальный подход к решениям приветствуются!</div>
-								<div><a href="#" class="btn-main vacancy-item__btn">Читать еще о наших разработках</a></div>
-							</div>
-							<div class="clmn-xs-12 clmn-sm-12 clmn-md-6 clmn-lg-6" >
-								<h3 class="vacancy-item__heading">Условия</h3>
-								<div>Зарплата обсуждается при личной встрече. Успешному кандидату предлагается доля в бизнесе.</div>
-								<div>Первые 1-3 месяца возможна работа с частичной занятостью (удаленно).</div>
-								<div>Резюме и заявления присылайте по адресу:</div>
-								<div><a href="mailto:cv@endurancerobots.com">cv@endurancerobots.com</a></div>				
-							</div>
-						</div>						
-					</div>
-					<div class="tab-pane fade" id="vacancy2">
-						<div class="grid-row">
-							<div class="clmn-xs-12 clmn-sm-12 clmn-md-6 clmn-lg-6" >
-								<h3 class="vacancy-item__heading">Квалификационные требования</h3>
-								<ul>
-									<li>Опыт работы в робототехнике</li>
-									<li>Знание микроконтроллеров Arduino, Propeller и др.</li>
-									<li>Способность работать руками и головой от начала до конца</li>
-									<li>Знание Android (1.5 — 5.1 версий)</li>
-									<li>Знание Java, Python</li>
-									<li>Знание лазеров CO2 (лазерных диодов)</li>
-									<li>Знание протоколов Bluetooth, ADB, WIFI</li>
-									<li>Понимание современного рынка робототехники</li>
-									<li>Мотивация заниматься роботами и дронами</li> 
-								</ul>
-								<div>Гибкость и мышления и нетривиальный подход к решениям приветствуются!</div>
-								<div><a href="#" class="btn-main vacancy-item__btn">Читать еще о наших разработках</a></div>
-							</div>
-							<div class="clmn-xs-12 clmn-sm-12 clmn-md-6 clmn-lg-6" >
-								<h3 class="vacancy-item__heading">Условия</h3>
-								<div>Зарплата обсуждается при личной встрече. Успешному кандидату предлагается доля в бизнесе.</div>
-								<div>Первые 1-3 месяца возможна работа с частичной занятостью (удаленно).</div>
-								<div>Резюме и заявления присылайте по адресу:</div>
-								<div><a href="mailto:cv@endurancerobots.com">cv@endurancerobots.com</a></div>				
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="vacancy3">
-						<div class="grid-row">
-							<div class="clmn-xs-12 clmn-sm-12 clmn-md-6 clmn-lg-6" >
-								<div>Если хотите увидеть то, чем мы занимаемся, посмотрите наши видео. Если хотите стать евангелистом Endurance, дайте нам знать. Нам нужны воодушевленные люди.</div>
-								<div>Endurance ищет страстных людей, сотрудников с высоким потенциалом.
-								Мы нанимаем инженеров-электриков, программистов и евангелистов.</div>
-								<div>Endurance – это совместный российско-американский технологический стартап, специализирующийся на создании дронов и роботов. Его штаб-квартиры находятся в Сан-Франциско и Москве.</div>
-							</div>
-							<div class="clmn-xs-12 clmn-sm-12 clmn-md-6 clmn-lg-6" >
-								<h3 class="vacancy-item__heading">Мы сделали ряд поразительных разработок:</h3>
-								<ol>
-									<li>Лазерный резак (обнови свой 3D-принтер с помощью мощного лазерного резака)</li>
-									<li>Система телеприсутствия (новое измерение общения)</li>
-									<li>Малые дроны (антботы для игр)</li>
-									<li>Большие дроны на колесах (тракботы для коммерческого и личного использования)</li>
-									<li>Малые квадкоптеры</li>
-								</ol>
-								<div>Резюме и заявления присылайте по адресу:</div>
-								<div><a href="mailto:cv@endurancerobots.com">cv@endurancerobots.com</a></div>				
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
 	
 	
 	<div class="fluid-block b-bottom-footer" >

@@ -14,8 +14,8 @@
 	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
 	<link type="image/x-icon" href="/favicon.ico" rel="icon" />
 
-	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
 	<link href="css/site.css" rel="stylesheet">
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -348,7 +348,7 @@
 					<div>&nbsp;</div>
 					<div>Мы доставим его в любую точку мира</div>
 					<div>&nbsp;</div>
-					<div><a href="" class="btn-red selfibot-buy__btn">Купить</a></div>
+					<div><a href="#" data-toggle="modal" data-target="#myModal" class="btn-red selfibot-buy__btn">Купить</a></div>
 					<div>&nbsp;</div>
 					<div class="selfibot-buy__btn-icon">
 						<a href="#" class="icon-playbutton">Запросить презентацию</a>
@@ -356,6 +356,43 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade modal-buy" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div>
+				<h4 class="heading-block modal-buy__heading">Оставьте заявку<br> и мы Вам позвоним!</h4>
+				<div class="modal-buy__note"> Уникальная возможность задать интересующие Вас вопросы напрямую создателям Селфибота!</div>
+			</div>
+			<div>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal__form-warning">* - поля, обязательные для заполнения</div>
+				<form action="" class="modal__form">
+					<div>
+						<input type="text" class="form-control" placeholder="Ваше имя*" name="name">
+					</div>
+					<div>
+						<input type="email" class="form-control" placeholder="E-mail*"  name="email">
+					</div>
+					<div>
+						<input type="tel" class="form-control" placeholder="Телефон" name="phone">
+					</div>
+					<div>
+						<input type="text" class="form-control" placeholder="Skype" name="skype">
+					</div>
+					<div>
+						<input type="text" class="form-control" placeholder="Название компании*" name="name-firm">
+					</div>
+					<div>
+						<textarea name="note" class="form-control" placeholder="Комментарий"></textarea>
+					</div>
+					<div>
+						<button type="submite" class="btn-red modal__form-btn">Отправить</button>
+					</div>
+				</form>
+			</div>			
 		</div>
 	</div>
 </div>
