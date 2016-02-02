@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>FE CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+	<meta HTTP-EQUIV="Cache-Control" content="no-cache" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+	<link type="image/x-icon" href="/favicon.ico" rel="icon" />
+
+	<link href="css/site.css" rel="stylesheet">
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+	<script src="js/jquery.min.js" ></script>
+
+	<script src="js/bootstrap.min.js" ></script>
+	<script src="js/fecss.js" ></script>
+	<script src="js/storage.js" ></script>
+
+	<script src="js/jquery-plugin/jquery.jqfeChangeClassEvent.js" ></script>
+	<script src="js/jquery-plugin/jquery.jqfeScrollTo.js" ></script>
+
+	<script src="js/document-ready.js" ></script>
+
+	<script>
+		$(document).ready(function() {
+			$('img').addClass('img-responsive');
+			var url = window.location.pathname;
+			$('.navbar-nav a[href="'+url+'"]').parent().addClass('active');	
+			$('.selfibot-nav a[href="'+url+'"]').parent().addClass('active');	
+			$('.carousel .item').eq('0').addClass('active');	
+		})
+	</script>
+
+</head>
+<body class="fecss full-height fe-dbg " >
+	
+	
+	
+	<div class="fluid-block b-top-header" >
+		<div class="adaptive-block grid grid-12 " >
+			<div class="grid-row" >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+					<div class="logo-cont" >
+						<a href="/" ><span class="logo" ></span></a>
+					</div>
+					<div class="contact-cont" >
+						
+						<div class="icon-cont" >
+							<a class="item phone" href="tel:+74952257624" >+7 (495) 225-76-24</a>
+							<a class="item fb " href="https://www.facebook.com/pages/Endurance/1399951053640252" ></a>
+							<a class="item twi " href="https://twitter.com/reangeorge" ></a>
+							<a class="item inst " href="https://instagram.com/endurancerobots/" ></a>
+							<a class="item lnkin " href="https://www.periscope.tv/reangeorge" ></a>
+						</div>
+						
+						<div class="lang-cont" >
+							<a class="item ru active" href="http://endurancerobots.com/about-endurance-3/" >Ru</a>
+							<a class="item ru " href="http://endurancerobots.com/about-endurance/" >En</a>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="clear" ></div>
+			
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="fluid-block b-top-menu" >
+		<div class="adaptive-block grid grid-12 " >
+			<div class="grid-row" >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+					<div class="menu d-t" >
+						<div class="d-t-r" >
+							<div class="d-t-c " >								
+								<div class="hoverdown" >
+									<a class="link" href="#link" >О нас</a>
+									<div class="viewonhover" >
+										<ul>
+											<li><a class="link" href="/team.html" >Команда</a></li>
+											<li><a class="link" href="/office.html">Офисы</a></li>
+											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/kontakty/ ">Контакты</a></li>
+											<li><a class="link" href="/about.html" >Наши принципы</a></li>
+											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/socialnye-seti/" >Социальные сети</a></li>
+											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/podpisatsya/" >Подписаться</a></li>
+											<li><a class="link" href="/vacancy.html" >Вакансии</a></li>
+											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/video/" >Видео</a></li>
+											<li><a class="link" href="/calendar.html" >Наш календарь</a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+							<div class="d-t-c" >							
+								<div class="hoverdown" >
+									<a class="link" href="#link" >Роботы</a>
+									<div class="viewonhover" >
+										<ul>
+											<li><a class="link" href="http://endurancerobots.com/kvadrokopter/" >Дрон</a></li>
+											<li><a class="link" href="/tele.html" >Телеприсутствие</a></li>
+											<li><a class="link" href="/rush-1.html" >Малый робот</a></li>
+											<li><a class="link" href="/rush-2.html" >Малый колесный робот Rash 2</a></li>
+											<li><a class="link" href="/oficiant.html" >Робот – официант</a></li>
+											<li><a class="link" href="/selfibot.html" >СелфиБот – специальный гаджет для мобильных устройств</a></li>
+											<li><a class="link" href="/truckbot.html" >Truckbot</a></li>
+											<li><a class="link" href="http://endurancerobots.com/kvadrokopter/" >Модифицированный квадрокоптер</a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+							<div class="d-t-c w025" >
+								
+								<div class="hoverdown" >
+									<a class="link" href="#link" >Лазерная резка и гравировка</a>
+									<div class="viewonhover" >
+										<ul>
+											<li><a class="link" href="/laser-2-1.html" >2.1 Ваттный лазер</a></li>
+											<li><a class="link" href="http://endurancerobots.com/3-5-vattnyj-lazer/" >3.5 Ваттный лазер</a></li>
+											<li><a class="link" href="http://endurancerobots.com/gravirovalnyj-stol/" >Endurance Wanhao лазерный диодный гравер / резак</a></li>
+											<li><a class="link" href="http://endurancerobots.com/endurance-diy-nastolnyj-lazernyj-graver-rezak/" >Endurance DIY настольный лазерный гравер / резак</a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+							<div class="d-t-c" >
+								<a class="link" href="http://endurancerobots.com/konsalting/" >Консалтинг</a>
+							</div>
+							<div class="d-t-c" >
+								<a class="link" href="#link" >Инвесторам</a>
+							</div>
+							<div class="d-t-c" >
+								<a class="link" href="http://endurancerobots.com/about-endurance-3/video/" >Видео</a>
+							</div>
+							<div class="d-t-c" >
+								<a class="link" href="/contacts.html" >Контакты</a>
+							</div>
+							<div class="d-t-c " >
+								<a class="" href="#link" ><span class="search-icon" ></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear" ></div>
+			
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="fluid-block selfibot-navbar" >
+	<div class="adaptive-block grid grid-12 flex " >		
+		<div class="grid-row" >							
+			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
+				<ul class="selfibot-nav">
+					<li class="selfibot-nav__item">
+						<a href="/rush-1.html">Малый робот Rush 1</a>
+					</li>
+					<li class="selfibot-nav__item">
+						<a href="/rush-2.html">Малый робот Rush 2</a>
+					</li>
+					<li class="selfibot-nav__item"><a href="/truckbot.html">Truckbot Renegade</a></li>					
+				</ul>			
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="bot-slider truckbot-slider fluid-block">
+	<div id="carousel-example-generic" class="carousel slide slider__carousel truckbot-slider__carousel" data-ride="carousel">
+		<div class="carousel-inner _s-carousel-inner hidden-xs">
+			<div class="item ">
+				<img src="/img/truckbot/truckbot-slider-item1.png" alt="">	
+			</div>
+			<div class="item ">
+				<img src="/img/truckbot/truckbot-slider-item1.png" alt="">	
+			</div>
+			<div class="item ">
+				<img src="/img/truckbot/truckbot-slider-item1.png" alt="">	
+			</div>
+			<div class="item ">
+				<img src="/img/truckbot/truckbot-slider-item1.png" alt="">	
+			</div>
+		</div>
+	
+		<div class="slider-flex"> 
+			<div class="adaptive-block grid grid-12 flex ">
+				<div class="grid-row">
+					<div class="clmn-xs-12 clmn-sm-6 clmn-md-6 clmn-lg-6 f-box">
+						<div class="slider-captions truckbot__slider-captions">
+							<div class="slider-captions__heading truckbot-slider-captions__heading">Колёсный робот <br>Renegate</div>
+							<div> 
+								<div>
+									Большой колесный робот создан для локальной доставки<br>внутри помещений небольших грузов
+								</div>
+								<div>&nbsp;</div>
+								<div class="slider-captions__cost selfibot-slider-captions__cost "><span>39 900</span></div>
+								<div>&nbsp;</div>
+								<div><a href="#" class="btn-red slider-captions__btn selfibot-slider-captions__btn">Купить</a></div> 
+							</div>
+							<ol class="carousel-indicators selfibot-carousel-indicators hidden-xs">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>  
+
+	<div class="fluid-block content-second-block content-block truckbot__content-block bg-white" >
+	<div class="adaptive-block grid grid-12 flex " >		
+		<div class="grid-row" >							
+			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
+				<h1 class="heading-block selfibot__heading-block">Endurance<br>представляет Вам колёсного робота Renegade</h1> 
+				<div class="selfibot__note-block">	  				
+					<div class="row truckbot__note-flex">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 video-box" >
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/urs68vf7ZFY" frameborder="0" allowfullscreen></iframe> 
+						</div>	 
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tele__note-inner" >
+							<h3 class="blue-heading">Тракбот</h3>
+							<div>Создан помогать в перемещении относительно небольших грузов, возможны различные модификации под конкретно Ваши потребности.</div>
+							<div>Зарядка от 12 вольт</div>
+							<div>Может управлять 2 сервоприводами</div>	 						
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="selfibot__advantages">
+							<h3 class="heading-block _sb-advantages__heading-block">Основные преимущества</h3>
+							<div class="_l-advantages__flex tele-advantages__flex">
+								<div class="_l-advantages__item _sb-adv__item icon-vehicle">
+									Мощная<br>колёсная база
+								</div>
+								<div class="_l-advantages__item _sb-adv__item icon-weights">Грузоподъёмность<br>более 10 кг</div>
+								<div class="_l-advantages__item _sb-adv__item icon-car">Скорость<br>до 6 км/ч</div>
+								<div class="_l-advantages__item _sb-adv__item icon-wifi">Управление<br>внутри сети 2G, 3G, 4G, WiFI</div>
+								<div class="_l-advantages__item _sb-adv__item icon-time">Время работы<br>батареи 5 часов</div>
+							</div>
+						</div>						
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 
+
+	<div class="fluid-block selfibot__buy tele__buy" >
+	<div class="selfibot-buy__bg hidden-xs"><img src="img/truckbot/truckbot-buy.png" alt=""></div>
+	<div class="adaptive-block grid grid-12 flex " >		
+		<div class="grid-row" >							
+			<div class="clmn-xs-12 clmn-sm-6 clmn-md-6 clmn-lg-6 f-box hidden-xs" >
+			</div>
+			<div class="clmn-xs-12 clmn-sm-6 clmn-md-6 clmn-lg-6 f-box selfibot-buy__note" >
+				<div>
+					<h3 class="heading-block selfibot-buy__heading-block">Закажите Truckbot<br>Renegade прямо сейчас</h3>
+					<div>&nbsp;</div>
+					<div>Мы доставим его в любую точку мира</div>
+					<div>&nbsp;</div>
+					<div><a href="#" data-toggle="modal" data-target="#myModal" class="btn-red selfibot-buy__btn">Купить</a></div>
+					<div>&nbsp;</div>
+					<div class="selfibot-buy__btn-icon">
+						<a href="#" class="icon-playbutton">Запросить презентацию</a>
+						<a href="#" class="icon-call">Обратный звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade modal-buy" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div>
+				<h4 class="heading-block modal-buy__heading">Оставьте заявку<br> и мы Вам позвоним!</h4>
+				<div class="modal-buy__note"> Уникальная возможность задать интересующие Вас вопросы напрямую создателям Truckbot
+Renegade!</div>
+			</div>
+			<div>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal__form-warning">* - поля, обязательные для заполнения</div>
+				<form action="" class="modal__form">
+					<div>
+						<input type="text" class="form-control" placeholder="Ваше имя*" name="name">
+					</div>
+					<div>
+						<input type="email" class="form-control" placeholder="E-mail*"  name="email">
+					</div>
+					<div>
+						<input type="tel" class="form-control" placeholder="Телефон" name="phone">
+					</div>
+					<div>
+						<input type="text" class="form-control" placeholder="Skype" name="skype">
+					</div>
+					<div>
+						<input type="text" class="form-control" placeholder="Название компании*" name="name-firm">
+					</div>
+					<div>
+						<textarea name="note" class="form-control" placeholder="Комментарий"></textarea>
+					</div>
+					<div>
+						<button type="submite" class="btn-red modal__form-btn">Отправить</button>
+					</div>
+				</form>
+			</div>			
+		</div>
+	</div>
+</div>
+
+	<div class="fluid-block selfibot__help bg-white-dark help-block " >
+	<div class="adaptive-block grid grid-12 flex " >		
+		<div class="grid-row" >							
+			<div class="clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 f-box" >
+				<h3 class="heading-block _sb-help__heading-block">Дополнительная информация по роботу Renrgade</div>
+				<div class="note-flex col3 _l-help__flex truckbot-help__flex">
+					<div>
+						<ul class="_l-help__nav _sb-help__nav">
+							<li><a href="#">Инструкция</a></li>
+						</ul>
+					</div>
+				</div> 
+			</div>
+		</div> 
+	</div>
+</div>
+ 
+	
+	
+	<div class="fluid-block b-bottom-footer" >
+		
+		<div class="adaptive-block grid grid-12 contact-cont" >
+			<div class="grid-row" >
+				
+				<div class="clmn-4 clmn-xs-12 clmn-sm-6 clmn-md-4 clmn-lg-4 write-to-me " >
+					<div class="title" >Пишите нам</div>
+					<div class="items" >
+						<a class="" href="mailto:info@endurancerobots.com" >info@endurancerobots.com</a>
+					</div>
+				</div>
+				
+				<div class="clmn-4 clmn-xs-12 clmn-sm-6 clmn-md-4 clmn-lg-4 subscribe " >
+					<div class="title" >Подпишитесь на нашу e-mail рассылку</div>
+					<div class="items" >
+						<form >
+							<input type="text" placeholder="Ваш E-mail" />
+							<input type="submit" value="Подписаться" />
+						</form>
+					</div>
+				</div>
+				
+				<div class="clmn-4 clmn-xs-12 clmn-sm-12 clmn-md-4 clmn-lg-4 social-cont " >
+					<div class="title" >Следите за нами там, где удобно</div>
+					<div class="items" >
+						<a class="s-icon i1 hover-scale" href="#link" ></a>
+						<a class="s-icon i2 hover-scale" href="#link" ></a>
+						<a class="s-icon i3 hover-scale" href="#link" ></a>
+						<a class="s-icon i4 hover-scale" href="#link" ></a>
+						<a class="s-icon i5 hover-scale" href="#link" ></a>
+						<a class="s-icon i6 hover-scale" href="#link" ></a>
+						<a class="s-icon i7 hover-scale" href="#link" ></a>
+						<a class="s-icon i8 hover-scale" href="#link" ></a>
+						<a class="s-icon i9 hover-scale" href="#link" ></a>
+						<a class="s-icon i10 hover-scale" href="#link" ></a>
+					</div>
+				</div>
+				
+				<div class="clear" ></div>
+			
+			</div>
+		</div>
+
+		<div class="adaptive-block grid grid-12 copy-cont" >
+			<div class="grid-row" >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+					<div class="copy" >© Endurance 2015 Все права защищены</div>
+					<div class="created-by" >
+						<a href="http://dorohovdesign.ru/" ></a>
+					</div>
+
+					<div class="clear" ></div>
+				</div>
+				
+				<div class="clear" ></div>
+			
+			</div>
+		</div>
+		
+	</div>
+	 
+
+</body>
+</html>

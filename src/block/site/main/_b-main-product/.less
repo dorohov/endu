@@ -20,8 +20,8 @@
 				
 				.product:nth-child(1), .product:nth-child(2) {
 					.white {
-						height:55.5em;/*46.5em;*/
-						
+						//height:55.5em;/*46.5em;*/
+						//height: 450px;
 						@media @media-size-xs {
 							& {
 								height:initial;
@@ -42,13 +42,26 @@
 							}
 						}
 					}
+					.img{
+						//height: 320px;
+						img{
+							@media @media-size-md {
+								max-width: 200px;
+							}
+							//height: 335px;
+						}
+					}
 				}
 				
 				.product:nth-child(1) {
 					position:absolute;
 					left:0;
 					top:0;
+
 					
+					@media @media-size-lg {
+						height: 450px;
+					}
 					@media @media-size-xs {
 						& {
 							position:relative;
@@ -60,7 +73,9 @@
 					position:absolute;
 					left:0;
 					bottom:0;
-					
+					@media @media-size-lg {
+						height: 450px;
+					}
 					@media @media-size-xs {
 						& {
 							position:relative;
@@ -72,7 +87,13 @@
 			.product {
 				display:block;
 				padding:1em;
-				
+				@media @media-size-lg {
+					height: 305px;
+				}
+				margin-bottom: 20px;
+				&.product-l{
+					height: 205px;
+				}
 				@media @media-size-sm {
 					& {
 						padding:0.5em;
@@ -93,7 +114,7 @@
 				
 				.white {
 					#site.bg(@c-hex-w);
-					padding:2em;
+					padding:2em 2em 0;
 					box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
 					
 					@media @media-size-sm {
@@ -110,7 +131,7 @@
 						
 						img {
 							display:block;
-							margin:3em auto;
+							margin:10px auto;
 							
 							@media @media-size-xs {
 								& {
@@ -138,17 +159,31 @@
 						#site.bold();
 						#site.uppercase;
 						border-top:1px #999999 solid;
-						padding-top:2em;
+						//padding-top:2em;
 						min-height:4.5em;
+
+						display: flex;
+						align-items: center;
 					}
 					
 				}
 				
 				&.indiegogo {
 					position:relative;
-					
+					height: auto;
 					.white.d-t {
-						min-height:278px;
+						@media @media-size-xs {
+							min-height:218px;
+						}
+						@media @media-size-lg {
+							min-height:218px;
+						}
+						@media @media-size-md {
+							min-height:208px;
+						}
+						@media @media-size-sm {
+							min-height:178px;
+						}
 						#site.bg(transparent);
 						box-shadow:none;
 						outline:1px #eb1e7c solid;

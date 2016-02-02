@@ -3374,7 +3374,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
 }
 .nav {
-  margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
@@ -4673,7 +4672,7 @@ button.close {
   position: relative;
 }
 .carousel-inner {
-  position: relative;
+  /*position: relative;*/
   overflow: hidden;
   width: 100%;
 }

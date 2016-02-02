@@ -52,6 +52,7 @@
 		text-align: center;
     	min-height: 0;
     	font-size: 20px;
+		.justify-content(@justify: center);
 	}
 }
 .selfibot-buy__heading-block{
@@ -133,5 +134,56 @@
 	}
 	@media @media-size-xs{	
     	min-height: 0;
+	}
+}
+.tele__buy{
+	//opacity: @opacity;
+	min-height: 548px;
+	@media @media-size-md{	
+    	min-height: 467px;
+	}
+	@media @media-size-sm{	
+    	min-height: 235px;
+	}
+	@media @media-size-xs{	
+    	min-height: 0;
+	}
+}
+.tele-buy__bg{
+	@media @media-size-md{
+		img{max-width: 975px;}
+	}
+	@media @media-size-sm{
+		img{max-width: 740px;}
+	}
+}
+.rush-buy__bg {
+	position: absolute;	
+	width: 100%;
+	img{
+		margin: 0 auto;
+	}
+}
+.rush-buy__heading-block{
+	font-size: 38px;
+    line-height: 48px;
+	font-weight: 900;
+	text-align: left;
+	@media @media-size-md{	
+		font-size: 30px;
+	    line-height: 42px;
+	}
+	@media @media-size-sm{	
+		font-size: 24px!important;
+	    line-height: 34px!important;
+	}
+	@media @media-size-xs{	    
+		font-size: 24px!important;
+    	text-align: center;
+	}
+}
+.rush2-buy__bg{
+	img{
+		.rotation-translate(@deg:0deg, @x:-80px, @y:0px);
 	}
 }

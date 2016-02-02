@@ -93,14 +93,14 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a:before {
   font-family: "flaticon";
-  font-size: 30px;
+  font-size: 36px;
   display: inline-block;
-  content: '\e001';
+  content: '\e002';
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
-  content: '\e000';
+  content: '\e001';
 }
 .flex-direction-nav .flex-prev {
   left: -50px;

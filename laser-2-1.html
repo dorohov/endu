@@ -40,6 +40,7 @@
 			$('img').addClass('img-responsive');
 			var url = window.location.pathname;
 			$('.navbar-nav a[href="'+url+'"]').parent().addClass('active');	
+			$('.selfibot-nav a[href="'+url+'"]').parent().addClass('active');	
 			$('.carousel .item').eq('0').addClass('active');	
 		})
 	</script>
@@ -115,12 +116,12 @@
 									<div class="viewonhover" >
 										<ul>
 											<li><a class="link" href="http://endurancerobots.com/kvadrokopter/" >Дрон</a></li>
-											<li><a class="link" href="http://endurancerobots.com/sistema-teleprisutstviya/" >Телеприсутствие</a></li>
-											<li><a class="link" href="http://endurancerobots.com/malyj-robot/" >Малый робот</a></li>
-											<li><a class="link" href="http://endurancerobots.com/malyj-kolesnyj-robot-rash-2-2/" >Малый колесный робот Rash 2</a></li>
+											<li><a class="link" href="/tele.html" >Телеприсутствие</a></li>
+											<li><a class="link" href="/rush-1.html" >Малый робот</a></li>
+											<li><a class="link" href="/rush-2.html" >Малый колесный робот Rash 2</a></li>
 											<li><a class="link" href="/oficiant.html" >Робот – официант</a></li>
 											<li><a class="link" href="/selfibot.html" >СелфиБот – специальный гаджет для мобильных устройств</a></li>
-											<li><a class="link" href="http://endurancerobots.com/about-endurance-3/produkty/truckbot/" >Truckbot</a></li>
+											<li><a class="link" href="/truckbot.html" >Truckbot</a></li>
 											<li><a class="link" href="http://endurancerobots.com/kvadrokopter/" >Модифицированный квадрокоптер</a></li>
 										</ul>
 									</div>
@@ -152,7 +153,7 @@
 								<a class="link" href="http://endurancerobots.com/about-endurance-3/video/" >Видео</a>
 							</div>
 							<div class="d-t-c" >
-								<a class="link" href="http://endurancerobots.com/about-endurance-3/kontakty/" >Контакты</a>
+								<a class="link" href="/contacts.html" >Контакты</a>
 							</div>
 							<div class="d-t-c " >
 								<a class="" href="#link" ><span class="search-icon" ></span></a>
@@ -198,7 +199,7 @@
 
 	<div class="slider-site fluid-block">
 	<div id="carousel-example-generic" class="carousel slide slider__carousel" data-ride="carousel">
-		<div class="carousel-inner hidden-xs">
+		<div class="carousel-inner _l-carousel-inner hidden-xs">
 			<div class="item ">
 				<img src="/img/laser-2-1/laser-2-1-slider-item3.jpg" alt="">	
 			</div>
@@ -283,14 +284,61 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<div class="laser__btn-flex btn-flex">
-							<a href="" class="btn-red _l-btn-flex__item">Видео гравировки c L-cheapo</a>
-							<a href="" class="btn-main _l-btn-flex__item">Промо-видео</a>
-							<a href="" class="btn-main _l-btn-flex__item">Видео помощь по установке L-cheapo</a>
+						<div class="laser__btn-flex btn-flex" id="accordionBlock">
+							<a data-toggle="collapse" data-parent="#accordion" href="#video1" class=" _l-btn-flex__item collapsed" aria-expanded="false">Видео гравировки c L-cheapo</a>
+							<a data-toggle="collapse" data-parent="#accordion" href="#video2" class=" _l-btn-flex__item collapsed" aria-expanded="false">Промо-видео</a>
+							<a data-toggle="collapse" data-parent="#accordion" href="#video3" class=" _l-btn-flex__item collapsed" aria-expanded="false">Видео помощь по установке L-cheapo</a>
 						</div>
+							<div class="panel-group" id="accordion">
+								<div class="panel">
+									<div id="video1" class="panel-collapse collapse ">
+										<div class="_l-video__flex">
+											<div class="_l-video__item">
+												<iframe width="420" height="315" src="https://www.youtube.com/embed/_Ym79VcbGRM" frameborder="0" allowfullscreen></iframe>
+											</div>
+											<div class="_l-video__item">
+												<iframe width="420" height="315" src="https://www.youtube.com/embed/_Ym79VcbGRM" frameborder="0" allowfullscreen></iframe>
+											</div>
+											<div class="_l-video__item">
+												<iframe width="420" height="315" src="https://www.youtube.com/embed/_Ym79VcbGRM" frameborder="0" allowfullscreen></iframe>
+											</div>	
+										</div>
+									</div>
+								</div>
+								<div class="panel">
+									<div id="video2" class="panel-collapse collapse">
+										<div class="_l-video__flex">
+											<div class="_l-video__item">
+												<iframe width="420" height="315" src="https://www.youtube.com/embed/_Ym79VcbGRM" frameborder="0" allowfullscreen></iframe>
+											</div>
+											<div class="_l-video__item">
+												<iframe width="420" height="315" src="https://www.youtube.com/embed/_Ym79VcbGRM" frameborder="0" allowfullscreen></iframe>
+											</div>
+											<div class="_l-video__item">
+												<iframe width="420" height="315" src="https://www.youtube.com/embed/_Ym79VcbGRM" frameborder="0" allowfullscreen></iframe>
+											</div>	
+										</div>
+									</div>
+								</div>
+								<div class="panel">
+									<div id="video3" class="panel-collapse collapse">
+										<div class="_l-video__flex">
+											<div class="_l-video__item">
+												<iframe width="420" height="315" src="https://www.youtube.com/embed/6s3koJ5MvIA" frameborder="0" allowfullscreen></iframe>
+											</div>
+											<div class="_l-video__item">
+												<iframe width="420" height="315" src="https://www.youtube.com/embed/6s3koJ5MvIA" frameborder="0" allowfullscreen></iframe>
+											</div>
+											<div class="_l-video__item">
+												<iframe width="420" height="315" src="https://www.youtube.com/embed/6s3koJ5MvIA" frameborder="0" allowfullscreen></iframe>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
 						<div class="laser__advantages">
-							<div class="heading-block__line">						
-								<h3 class="heading-block _l-advantages__heading-block">Endurance L-cheapo</h3>						
+							<div class="heading-block__line">					
+								<h3 class="heading-block _l-advantages__heading-block">Endurance L-cheapo</h3>					
 							</div>
 							<div class="_l-advantages__flex">
 								<div class="_l-advantages__item icon-hierarchical">
@@ -473,7 +521,7 @@ $(window).load(function() {
 				<div class="note-flex col3 _l-help__flex">
 					<div>
 						<ul class="_l-help__nav">
-							<li class="active"><a href="#">Как сделать гравировку. Полная инструкция</a></li>
+							<li><a href="#">Как сделать гравировку. Полная инструкция</a></li>
 							<li><a href="#">Решение</a></li>
 							<li><a href="#">Зачем</a></li>
 							<li><a href="#">Для гравировки необходимо</a></li>
