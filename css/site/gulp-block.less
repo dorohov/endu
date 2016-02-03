@@ -2507,13 +2507,17 @@ body {
 			#site.color(#ffffff);
 			#site.size(1.4em);
 			
-			&:hover {
+			.link {
 				#site.underline();
 			}
 		}
 		
 		.hoverdown {
 			#site.bg(#0962ac);
+			
+			.link {
+				#site.underline();
+			}
 			
 			@media @media-size-xs {
 				& {
@@ -2542,6 +2546,10 @@ body {
 		.d-t-c {
 			min-width:10%;
 			text-align:center;
+			
+			.link {
+				#site.underline();
+			}
 			
 			&.w025 {
 				width:25%;
