@@ -1,9 +1,9 @@
 .b-top-menu {
 	#site.bg(#0962ac);
 	padding:3em 0em;
+	position: relative;
+	z-index: 20;
 	
-    position: relative;
-    z-index: 20;
 	.menu {
 		padding:0em 1em;
 		
@@ -11,6 +11,10 @@
 			#site.uppercase();
 			#site.color(#ffffff);
 			#site.size(1.4em);
+			
+			&:hover {
+				#site.underline();
+			}
 		}
 		
 		.hoverdown {
