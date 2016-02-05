@@ -4,7 +4,9 @@
 	background-size: cover;
 	background-image:url('@{url-path-img}/b-top-slider-bg.jpg');
 	height:76em;
-	
+	position:relative;
+	overflow:hidden;
+
 	@media @media-size-xs {
 		& {
 			height:20em;
@@ -17,4 +19,16 @@
 		}
 	}
 	
+}
+.b-top-slider > video {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	object-fit: contain;
 }

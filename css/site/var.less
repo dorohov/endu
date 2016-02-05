@@ -14,7 +14,7 @@ font-family: 'Roboto Condensed', sans-serif;
 */
 
 @url-site:'';
-//@url-path:'/wp-content/themes/azbnbasetheme';
+//@url-path:'http://endurancerobots.com/wp-content/themes/twentytwelve/endu';
 @url-path:'./..';
 @url-path-css:'@{url-path}/css';
 @url-path-img:'@{url-path}/img';
@@ -93,6 +93,9 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 .rotation(@deg:5deg){
   .transform(rotate(@deg));
+}
+.rotation-translateX(@x:0px){
+  .transform(translateX(@x));
 }
 .rotation-translate(@deg:0deg, @x:0px, @y:0px){
   .transform(rotate(@deg) translateX(@x) translateY(@y));

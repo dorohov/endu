@@ -117,7 +117,7 @@ body {
 	.flex-wrap(@wrap: wrap);
 	//margin-bottom: 25px;
 }
-.modal-buy{
+.modal-request{
 	font-size: 14px;
 	line-height: 24px;
 	.modal-dialog{
@@ -139,6 +139,23 @@ body {
     			margin-bottom: 30px;
     		}	
 		}
+		.icon-buy{
+			background: url(/img/icon-modal-buy.png) no-repeat bottom left;
+		}
+		.icon-call{
+			background: url(/img/icon-modal-call.png) no-repeat bottom left;
+		}
+		.icon-play{
+			background: url(/img/icon-modal-play.png) no-repeat bottom left;
+		}
+		a{
+			color: lighten(@black, 40%);
+			text-decoration: underline;
+			&:hover{
+				color: lighten(@black, 40%);
+				text-decoration: none;
+			}			
+		}
 		margin-left: -15px;
 		margin-right: -15px;
 		button.close{
@@ -147,7 +164,7 @@ body {
 			right: 30px;
 			top: 20px;
 		}
-		.modal-buy__heading{
+		.modal-request__heading{
 			font-size: 36px;
 			line-height: 48px;
 			color: lighten(@black, 20%);
@@ -157,7 +174,7 @@ body {
     			text-align: center;
     		}
 		}
-		.modal-buy__note{
+		.modal-request__note{
 			font-size: 24px;
 			line-height: 38px;
 			font-weight: 700;	
@@ -172,7 +189,11 @@ body {
 				line-height: 28px;
     		}		
 		}
+		.modal-request__link{
+			margin-top: 70px;
+		}
 		.modal__form{
+			label{font-weight: 400}
 			.form-control{
 				height: 42px;
 				margin-bottom: 20px;
@@ -204,4 +225,46 @@ body {
     		}
 		}
 	}
+}
+.content-block__second{	
+	.mixin-headings(
+		@font-family: @roboto, 
+		@font-size: 14px, 
+		@line-height: 24px, 
+		@color: lighten(@black, 40%)
+	);
+	a{
+		color: @blue;
+		text-decoration: underline;
+		&:hover,
+		&:focus{
+			color: @blue;
+			text-decoration: none;	
+		}
+	}
+	h2{
+		.mixin-headings(
+			@font-family: @roboto, 
+			@font-size: 36px, 
+			@line-height: 42px, 
+			@color: lighten(@black, 20%)
+		);
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	div + h2{
+		margin-top: 40px;
+	}
+	h3{
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 15px;
+	}
+}
+.second__heading-block{
+	text-align: left;
+	font-size: 36px;
+	line-height: 45px;
+	font-weight: 900;
+	margin-bottom: 10px;
 }

@@ -128,8 +128,7 @@
 								</div>
 								
 							</div>
-							<div class="d-t-c w025" >
-								
+							<div class="d-t-c w025">							
 								<div class="hoverdown" >
 									<a class="link" href="#link" >Лазерная резка и гравировка</a>
 									<div class="viewonhover" >
@@ -140,17 +139,16 @@
 											<li><a class="link" href="http://endurancerobots.com/endurance-diy-nastolnyj-lazernyj-graver-rezak/" >Endurance DIY настольный лазерный гравер / резак</a></li>
 										</ul>
 									</div>
-								</div>
-								
+								</div>								
 							</div>
 							<div class="d-t-c" >
-								<a class="link" href="http://endurancerobots.com/konsalting/" >Консалтинг</a>
+								<a class="link" href="/konsalting.html" >Консалтинг</a>
 							</div>
 							<div class="d-t-c" >
 								<a class="link" href="#link" >Инвесторам</a>
 							</div>
 							<div class="d-t-c" >
-								<a class="link" href="http://endurancerobots.com/about-endurance-3/video/" >Видео</a>
+								<a class="link" href="/video.html" >Видео</a>
 							</div>
 							<div class="d-t-c" >
 								<a class="link" href="/contacts.html" >Контакты</a>
@@ -327,8 +325,14 @@
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/mDxQXpOo6xo" frameborder="0" allowfullscreen></iframe> 
 						</div>
 						<div class="clearfix"></div>
-						<div class="col-xs-12">
-							<a href="" class="btn-main _sb-bis__btn">Как работает  Селфибот с AddReality?</a>
+						<div class="col-xs-12 dropdown _sb-bis__dropdown">
+							<a href="#" class="btn-main _sb-bis__btn" data-toggle="dropdown" id="dDelivery" data-target="#">Как работает  Селфибот с AddReality?</a>
+							<div class="dropdown-menu _sb-bis__dropdown-menu"  aria-labelledby="dDelivery">
+								<div class="note-flex _b-gallery__note _sb-gallery__note col2"> 
+									<div>Наше приспособление будет полезным, как для профессиональных художников, так и для любителей, желающих нанести логотип на свой очередной прототип или украсить любимый гаджет какой-то своей оригинальной гравировкой. Поскольку наше устройство позволяет работать с кожей, это открывает новые возможности для воплощения самых замысловатых фантазий художника в реальность. Наш лазер может оплавлять поверхность материала, создавая произвольный 3-х мерный рельеф.</div>
+									<div>Однако следует отметить, что под воздействием высоких температур большинство материалов чернеет. L-cheapo достаточно мощный, чтобы резать акрил, дерево, фанеру, картон и кожу до 3/16″ (4,76 мм) толщиной. (В некоторых опытах нам даже удавалось резать дерево и фанеру до 8,5 мм толщиной при многократном прохождении лазерного луча.)</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				
@@ -349,23 +353,105 @@
 					<div>&nbsp;</div>
 					<div>Мы доставим его в любую точку мира</div>
 					<div>&nbsp;</div>
-					<div><a href="#" data-toggle="modal" data-target="#myModal" class="btn-red selfibot-buy__btn">Купить</a></div>
+					<div><a href="#" data-toggle="modal" data-target="#ModalBuy" class="btn-red selfibot-buy__btn">Купить</a></div>
 					<div>&nbsp;</div>
 					<div class="selfibot-buy__btn-icon">
-						<a href="#" class="icon-playbutton">Запросить презентацию</a>
-						<a href="#" class="icon-call">Обратный звонок</a>
+						<a href="#" class="icon-playbutton" data-toggle="modal" data-target="#ModalPlay">Запросить презентацию</a>
+						<a href="#" class="icon-call" data-toggle="modal" data-target="#ModalCall">Обратный звонок</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="modal fade modal-buy" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade modal-request" id="ModalCall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
+			<div class="icon-call">
+				<h4 class="heading-block modal-request__heading">Оставьте заявку<br>и мы Вам позвоним!</h4>
+				<div class="modal-request__note">Уникальная возможность задать интересующие Вас вопросы напрямую создателям Селфибота!</div>
+			</div>
 			<div>
-				<h4 class="heading-block modal-buy__heading">Оставьте заявку<br> и мы Вам позвоним!</h4>
-				<div class="modal-buy__note"> Уникальная возможность задать интересующие Вас вопросы напрямую создателям Селфибота!</div>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal__form-warning">* - поля, обязательные для заполнения</div>
+				<form action="" class="modal__form">
+					<div>
+						<input type="text" class="form-control" placeholder="Ваше имя*" name="name">
+					</div>
+					<div>
+						<input type="email" class="form-control" placeholder="E-mail*"  name="email">
+					</div>
+					<div>
+						<input type="tel" class="form-control" placeholder="Телефон" name="phone">
+					</div>
+					<div>
+						<input type="text" class="form-control" placeholder="Skype" name="skype">
+					</div>
+					<div>
+						<textarea name="note" class="form-control" placeholder="Ваш запрос*"></textarea>
+					</div>
+					<div>
+						<button type="submite" class="btn-red modal__form-btn">Отправить</button>
+					</div>
+				</form>
+			</div>			
+		</div>
+	</div>
+</div>
+<div class="modal fade modal-request" id="ModalBuy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="icon-buy">
+				<h4 class="heading-block modal-request__heading">Остался последний шаг!</h4>
+				<div class="modal-request__note">Заполните форму и совсем скоро вы станете счастливым обладателем Селфибота!</div>
+				<div class="modal-request__link">
+					<a href="#">Расчёт стоимости доставки по РФ Почтой России</a> 
+				</div>
+				<div>
+					&nbsp;
+				</div>
+				<div>
+					<a href="#">Альтернативный расчёт</a>
+				</div>
+			</div>
+			<div>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal__form-warning">* - поля, обязательные для заполнения</div>
+				<form action="" class="modal__form">
+					<div>
+						<input type="text" class="form-control" placeholder="Ваше имя*" name="name">
+					</div>
+					<div>
+						<input type="email" class="form-control" placeholder="E-mail*"  name="email">
+					</div>
+					<div>
+						<input type="tel" class="form-control" placeholder="Телефон" name="phone">
+					</div>
+					<div>
+						<input type="text" class="form-control" placeholder="Адрес*" name="address">
+					</div>
+					<div>
+						<input type="text" class="form-control" placeholder="Индекс" name="name-firm">
+					</div>
+					<div>
+						<label>
+							Срочная покупка <input type="checkbox">
+						</label>
+					</div>
+					<div>
+						<button type="submite" class="btn-red modal__form-btn">Купить</button>
+					</div>
+				</form>
+			</div>			
+		</div>
+	</div>
+</div>
+<div class="modal fade modal-request" id="ModalPlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="icon-play">
+				<h4 class="heading-block modal-request__heading">Оставьте заявку<br> и мы Вам позвоним!</h4>
+				<div class="modal-request__note"> Уникальная возможность задать интересующие Вас вопросы напрямую создателям Селфибота!</div>
 			</div>
 			<div>
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
