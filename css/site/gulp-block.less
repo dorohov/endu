@@ -249,7 +249,7 @@
 			&:hover,
 			&:focus{
 				text-decoration: underline;
-				background: none;
+				background: none!important;
 			}
 		}
 		&.active {
@@ -373,6 +373,7 @@
 .office-item__btn{
 	max-width: 230px;
 	padding: 5px 20px;
+	margin-top: 20px;
 }
 //team-block
 .team__heading-block{
@@ -3134,6 +3135,9 @@ body {
 					height: 305px;
 				}
 				margin-bottom: 20px;
+				&:nth-child(7){
+					height: 205px; 
+				}
 				&.product-l{
 					height: 205px;
 				}
@@ -3455,7 +3459,7 @@ body {
 		}
 		
 		p {
-			margin:0 0 1em 0;
+			margin:0 0 0.2em 0;
 			padding:0;
 			
 			@media @media-size-xs {
