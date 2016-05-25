@@ -2250,7 +2250,7 @@
 		border-collapse: collapse;
 		
 		td {
-			padding:1em 0;
+			padding:1em;
 			border:1px #333333 solid;
 		}
 	}
@@ -2275,6 +2275,19 @@
 		}
 	}
 	
+	h1,h2,h3,h4,h5,h6 { color: #111; }
+	
+	h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+	h2 { font-size: 2em; margin-bottom: 0.75em; }
+	h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+	h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+	h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+	h6 { font-size: 1em; font-weight: bold; }
+	
+	h1 img, h2 img, h3 img,
+	h4 img, h5 img, h6 img {
+	  margin: 0;
+	}
 	
 }
 .azbnvideo-iframe {
@@ -2785,54 +2798,6 @@ body {
 		}
 	}
 }
-.selfibot-navbar{
-	//opacity: @opacity;
-	//background: @white; 
-	padding: 10px 0;
-	position: relative;
-	z-index: 15;
-	@media @media-size-md{	 
-		padding: 10px 0 20px;
-	}	
-	@media @media-size-sm{	 
-		padding: 10px 0 20px;
-	}	
-}
-.selfibot-nav{
-	list-style: none; 
-	.clearfix();
-}
-.selfibot-nav__item{
-	@blue-nav: rgb(9, 98, 172); 
-	float: left;
-	margin-right: 20px;
-	a{
-		display: inline-block;
-		font-size: 16px;
-		color: lighten(@black, 20%); 
-		line-height: 20px;
-		border: 1px solid transparent;
-		padding: 3px 20px !important;
-		border-radius: 10px;
-	}
-	&.active{
-		a{
-			color: @blue-nav;
-			border-color: @blue-nav;
-		}
-	}
-	@media @media-size-xs{
-		float: none;
-		text-align: center;
-		margin: 0 0 20px;		
-		&:last-child{
-			margin: 0; 
-		}
-	}
-	&:last-child{
-		margin-right: 0;
-	}
-}
 .b-top-header {
 	clear:both;
 	padding:3em 0;
@@ -3109,6 +3074,54 @@ body {
 		
 	}
 	
+}
+.selfibot-navbar{
+	//opacity: @opacity;
+	//background: @white; 
+	padding: 10px 0;
+	position: relative;
+	z-index: 15;
+	@media @media-size-md{	 
+		padding: 10px 0 20px;
+	}	
+	@media @media-size-sm{	 
+		padding: 10px 0 20px;
+	}	
+}
+.selfibot-nav{
+	list-style: none; 
+	.clearfix();
+}
+.selfibot-nav__item{
+	@blue-nav: rgb(9, 98, 172); 
+	float: left;
+	margin-right: 20px;
+	a{
+		display: inline-block;
+		font-size: 16px;
+		color: lighten(@black, 20%); 
+		line-height: 20px;
+		border: 1px solid transparent;
+		padding: 3px 20px !important;
+		border-radius: 10px;
+	}
+	&.active{
+		a{
+			color: @blue-nav;
+			border-color: @blue-nav;
+		}
+	}
+	@media @media-size-xs{
+		float: none;
+		text-align: center;
+		margin: 0 0 20px;		
+		&:last-child{
+			margin: 0; 
+		}
+	}
+	&:last-child{
+		margin-right: 0;
+	}
 }
 .b-main-product {
 	#site.bg(#f6f6f6);
