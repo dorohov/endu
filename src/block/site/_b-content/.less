@@ -1221,4 +1221,15 @@
 ._czr__gb-text{    
 	max-width: 680px;
     margin: 0 auto;
+    .small{
+    	font-size: 15px;
+    	@media @media-size-sm {font-size: 14px;}
+    	@media @media-size-xs {font-size: 13px;}
+    }
+    a{
+    	text-decoration: underline;
+    	&:hover{
+    		text-decoration:none; 
+    	}
+    }
 }
