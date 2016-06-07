@@ -1,0 +1,51 @@
+.b-azbn-common {
+	
+}
+.b-azbn-fullscreen {
+	transition:all @trans-speed ease;
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:100%;
+	
+	&.fullscreen-video {
+		z-index:32;
+		top:0%;
+		background-color:#999999;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center center;
+		
+		.b-azbn-diy-selfibot-container[data-slide-id="0"] & {
+			top:100%;
+		}
+	}
+	
+	&.fullscreen-content {
+		z-index:34;
+		top:0%;
+		background-color:#666666;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center center;
+		
+		.b-azbn-diy-selfibot-container[data-slide-id="0"] &,
+		.b-azbn-diy-selfibot-container[data-slide-id="1"] & {
+			top:100%;
+		}
+	}
+	
+	&.fullscreen-btns {
+		z-index:36;
+		top:100%;
+		background-color:#333333;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center center;
+		.b-azbn-diy-selfibot-container[data-slide-id="9"] & {
+			top:0%;
+		}
+	}
+	
+}
