@@ -15,6 +15,38 @@ $(function() {
 	
 	can_scroll();
 	
+	
+	var s_size = block.find('.fullscreen-content .b-azbn-slide').size();
+	if(s_size) {
+		
+		var ul = block.find('.fullscreen-content .content-pagination ul');
+		ul.empty();
+		
+		block.find('.fullscreen-content .b-azbn-slide').each(function(index){
+			
+			var s = $(this);
+			var slide_id = s.attr('data-slide-id');
+			
+			ul.append('<li><a href="#-" data-slide-id="' + slide_id + '" ></a></li>');
+			
+			ul.find('li a').on('click.azbn', function(event){
+				event.preventDefault();
+				
+				var btn = $(this);
+				var next = parseInt(btn.attr('data-slide-id'));
+				
+				block.attr('data-slide-id', next);
+				block.trigger('azbn.wheel', [{diff:0, next:next, callback:function(){
+					can_scroll(451);
+				}}]);
+			})
+			
+		});
+		
+		$('#b-azbn-diy-selfibot-container-slide-count').html(s_size);
+	}
+	
+	
 	if(block.size() && !device.mobile() && !device.tablet()) {
 		
 		$(document.body).on('azbn.wheel', '.b-azbn-diy-selfibot-container', {}, function(event, obj){
@@ -22,7 +54,23 @@ $(function() {
 			
 			var cb = obj.callback;
 			
+			if(obj.next != 9 && obj.next != 1) {
+				$('#b-azbn-diy-selfibot-container-slide-id').html(obj.next - 1);
+			}
+			
 			cb();
+		});
+		
+		$(document.body).on('click.azbn', '.b-azbn-diy-selfibot-container .down-scroll-btn a', {}, function(event){
+			event.preventDefault();
+			
+			var slide = parseInt(block.attr('data-slide-id'));
+			var next = slide + 1;
+			block.attr('data-slide-id', next);
+			block.trigger('azbn.wheel', [{diff:0, next:next, callback:function(){
+				can_scroll(451);
+			}}]);
+			
 		});
 		
 		$(document).on("wheel mousewheel DOMMouseScroll", function(event) {
@@ -49,7 +97,7 @@ $(function() {
 						next = slide - 1;
 						block.attr('data-slide-id', next);
 						block.trigger('azbn.wheel', [{diff:diff, next:next, callback:function(){
-							can_scroll(300);
+							can_scroll(451);
 						}}]);
 					} else {
 						can_scroll();
@@ -59,7 +107,7 @@ $(function() {
 						next = slide + 1;
 						block.attr('data-slide-id', next);
 						block.trigger('azbn.wheel', [{diff:diff, next:next, callback:function(){
-							can_scroll(300);
+							can_scroll(451);
 						}}]);
 					} else {
 						can_scroll();

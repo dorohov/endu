@@ -2,6 +2,8 @@
 	@icon-base: flaticon;
 	@agora: agorasansproregular-webfont;
 	@agora-black: agorasansproblack-webfont;
+	@dinpro: dinpro;
+	
 	.include-custom-font(@family: @icon-base, @weight: normal, @style: normal){
 		@font-face{			
 			font-family: "@{family}";			
@@ -17,6 +19,7 @@
 	.include-custom-font(@family: @icon-base, @weight: normal, @style: normal);
 	.include-custom-font(@family: @agora, @weight: normal, @style: normal);
 	.include-custom-font(@family: @agora-black, @weight: normal, @style: normal);
+	.include-custom-font(@family: @dinpro, @weight: normal, @style: normal);
 	.mixin-headings(
 		@font-family: @roboto, 
 		@font-size: 20px, 
