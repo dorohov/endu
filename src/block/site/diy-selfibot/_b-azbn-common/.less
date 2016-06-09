@@ -524,8 +524,8 @@
 		display:block;
 		position:absolute;
 		margin:0 auto;
-		width:33.33333333%;
-		left:33.33333333%;
+		width:28%;
+		left:36%;
 		bottom:120px;
 		transition:all @trans-speed ease;
 		opacity:0;
@@ -575,20 +575,64 @@
 		
 		/*
 		.b-azbn-diy-selfibot-container[data-slide-id="3"] &[data-slide-id="3"] {
-			background-image:url('@{url-path-img}/diy-selfibot/.device-item/3.png');
+			background-image:url('@{url-path-img}/diy-selfibot/.device-item/3.jpg');
 		}
 		.b-azbn-diy-selfibot-container[data-slide-id="4"] &[data-slide-id="4"] {
-			background-image:url('@{url-path-img}/diy-selfibot/.device-item/4.png');
+			background-image:url('@{url-path-img}/diy-selfibot/.device-item/4.jpg');
 		}
 		.b-azbn-diy-selfibot-container[data-slide-id="5"] &[data-slide-id="5"] {
-			background-image:url('@{url-path-img}/diy-selfibot/.device-item/5.png');
+			background-image:url('@{url-path-img}/diy-selfibot/.device-item/5.jpg');
 		}
 		.b-azbn-diy-selfibot-container[data-slide-id="6"] &[data-slide-id="6"] {
-			background-image:url('@{url-path-img}/diy-selfibot/.device-item/6.png');
+			background-image:url('@{url-path-img}/diy-selfibot/.device-item/6.jpg');
 		}
 		.b-azbn-diy-selfibot-container[data-slide-id="7"] &[data-slide-id="7"] {
-			background-image:url('@{url-path-img}/diy-selfibot/.device-item/7.png');
+			background-image:url('@{url-path-img}/diy-selfibot/.device-item/7.jpg');
 		}
 		*/
 	}
+}
+
+.youtube-btn {
+	position:absolute;;
+	display:inline-block;
+	font-family: @roboto;
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	width:160px;
+	text-transform:uppercase;
+	padding-top:70px;
+	
+	&:hover {
+		text-decoration:underline;
+	}
+	
+	&:before {
+		content:'';
+		position:absolute;
+		left:0;
+		top:0;
+		width:64px;
+		height:46px;
+		background-repeat:no-repeat;
+		background-position:center center;
+		background-image:url('@{url-path-img}/diy-selfibot/.youtube-btn/icon.png');
+	}
+}
+
+.congrat {
+	
+	.congrat-selfibot {
+		position:absolute;
+		left:0;
+		top:0;
+		width:370px;
+		height:497px;
+		background-repeat:no-repeat;
+		background-position:center center;
+		background-image:url('@{url-path-img}/diy-selfibot/.congrat/congrat-selfibot.png');
+	}
+	
 }
