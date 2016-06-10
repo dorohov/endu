@@ -1,5 +1,7 @@
 $(function() {
 	
+	//$('.bottom-bordered .bb-help').tooltip();
+	
 	var block = $('.b-azbn-diy-selfibot-container').eq(0);
 	var scrolling;
 	
@@ -18,6 +20,10 @@ $(function() {
 	
 	var s_size = block.find('.fullscreen-content .b-azbn-slide').size();
 	if(s_size) {
+		
+		block.css({
+			top : ($('.b-top-header').outerHeight(true) + $('.b-top-menu').outerHeight(true)) + 'px',
+		})
 		
 		var ul = block.find('.fullscreen-content .content-pagination ul');
 		ul.empty();
