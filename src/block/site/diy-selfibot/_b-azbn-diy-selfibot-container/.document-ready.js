@@ -79,7 +79,7 @@ $(function() {
 			
 		});
 		
-		$(document).on("wheel mousewheel DOMMouseScroll", function(event) {
+		$(document.body).on("wheel mousewheel DOMMouseScroll MozMousePixelScroll", function(event) {
 			event.preventDefault();
 			//diff:event.originalEvent.wheelDelta
 			
@@ -92,7 +92,7 @@ $(function() {
 				scrolling = true;
 				//$(document.body).trigger('fecss.wheel-block.set', [{diff:event.originalEvent.wheelDelta}]);
 				
-				var diff = event.originalEvent.wheelDelta;
+				var diff = (-event.originalEvent.deltaY) || event.originalEvent.detail || event.originalEvent.wheelDelta;
 				//console.log(diff);
 				var slide = parseInt(block.attr('data-slide-id'));
 				//var now = slide;
