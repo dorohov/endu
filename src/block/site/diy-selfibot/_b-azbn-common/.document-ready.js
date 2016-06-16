@@ -12,15 +12,35 @@ $(function() {
 		
 	});
 	
-	$.okvideo({
-		target : $('.b-azbn-diy-selfibot-container .b-azbn-slide[data-slide-id="1"]'),
-		video : $('.b-azbn-diy-selfibot-container .b-azbn-slide[data-slide-id="1"]').attr('data-okvideo-uid'),
-		volume : 100,
-		hd : true,
-		disablekeyControl : true,
-		captions : false,
-		loop : true,
-		controls : false,
-	});
+	if($('.b-azbn-diy-selfibot-container').size() && !screenJS.isXS() && !screenJS.isSM()) {
+		
+		$.okvideo({
+			target : $('.b-azbn-diy-selfibot-container .b-azbn-slide[data-slide-id="1"]'),
+			video : $('.b-azbn-diy-selfibot-container .b-azbn-slide[data-slide-id="1"]').attr('data-okvideo-uid'),
+			volume : 0,
+			hd : true,
+			disablekeyControl : true,
+			captions : false,
+			loop : true,
+			controls : false,
+		});
+		
+	} else {
+		
+		/*
+		$.okvideo({
+			target : $('.b-azbn-diy-selfibot-container .b-azbn-slide[data-slide-id="1"]'),
+			video : $('.b-azbn-diy-selfibot-container .b-azbn-slide[data-slide-id="1"]').attr('data-okvideo-uid'),
+			volume : 100,
+			//hd : true,
+			disablekeyControl : true,
+			captions : false,
+			loop : true,
+			controls : false,
+			//autoplay : false,
+		});
+		*/
+		
+	}
 	
 });

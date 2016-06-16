@@ -19,7 +19,7 @@ $(function() {
 	
 	
 	var s_size = block.find('.fullscreen-content .b-azbn-slide').size();
-	if(s_size) {
+	if(s_size && !screenJS.isXS() && !screenJS.isSM()) {
 		
 		block.css({
 			top : ($('.b-top-header').outerHeight(true) + $('.b-top-menu').outerHeight(true)) + 'px',
@@ -53,7 +53,7 @@ $(function() {
 	}
 	
 	
-	if(block.size() && !device.mobile() && !device.tablet()) {
+	if(block.size() && !screenJS.isXS() && !screenJS.isSM()) {
 		
 		$(document.body).on('azbn.wheel', '.b-azbn-diy-selfibot-container', {}, function(event, obj){
 			event.preventDefault();
@@ -135,6 +135,10 @@ $(function() {
 			}
 			
 		});
+		
+	} else {
+		
+		
 		
 	}
 	
