@@ -12,4 +12,15 @@ $(function() {
 		
 	});
 	
+	$.okvideo({
+		target : $('.b-azbn-diy-selfibot-container .b-azbn-slide[data-slide-id="1"]'),
+		video : $('.b-azbn-diy-selfibot-container .b-azbn-slide[data-slide-id="1"]').attr('data-okvideo-uid'),
+		volume : 100,
+		hd : true,
+		disablekeyControl : true,
+		captions : false,
+		loop : true,
+		controls : false,
+	});
+	
 });

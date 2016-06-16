@@ -64,6 +64,14 @@ $(function() {
 				$('#b-azbn-diy-selfibot-container-slide-id').html(obj.next - 1);
 			}
 			
+			/*
+			if(obj.next == 0 || obj.next == 1) {
+				
+			} else {
+				
+			}
+			*/
+			
 			cb();
 		});
 		
