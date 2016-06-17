@@ -52,7 +52,7 @@
 		opacity:1;
 	}
 	
-	@media @media-size-xs{
+	@media @media-size-xs {
 		& {
 			.__clear_abs_pos();
 			
@@ -63,7 +63,7 @@
 			}
 		}
 	}
-	@media @media-size-sm{
+	@media @media-size-sm {
 		& {
 			.__clear_abs_pos();
 			
@@ -71,6 +71,18 @@
 				.__clear_abs_pos();
 				max-width:100%;//temp
 				height:inherit;
+			}
+		}
+	}
+	@media @media-size-md {
+		.tablet & {
+			.__clear_abs_pos();
+			
+			& * {
+				.__clear_abs_pos();
+				max-width:100%;//temp
+				height:inherit;
+				//#site.bg(#ffffff);
 			}
 		}
 	}
