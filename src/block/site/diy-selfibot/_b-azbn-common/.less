@@ -354,6 +354,7 @@
 	bottom:30px;
 	#site.bg(#f9fafe);
 	
+	/*
 	&:before {
 		content:'';
 		position:absolute;
@@ -365,6 +366,7 @@
 		background-position:center center;
 		background-image:url('@{url-path-img}/diy-selfibot/.content-grey-bg/content-grey-bg-bg.png');
 	}
+	*/
 	
 	@media @media-size-xs {
 		& {
@@ -624,6 +626,10 @@
 				display:none;
 			}
 		}
+		
+		.desktop .xs-h & {
+			
+		}
 	}
 	.btns {
 		display:inline-block;
@@ -757,6 +763,11 @@
 			display:none;
 		}
 	}
+	@media @media-size-md {
+		.mobile & {
+			display:none;
+		}
+	}
 }
 .content-menu-cont {
 	transition:all @trans-speed ease;
@@ -773,6 +784,18 @@
 		right:0%;
 	}
 	
+	@media @media-size-xs {
+		& {
+			display:none;
+		}
+	}
+	
+	@media @media-size-sm {
+		& {
+			display:none;
+		}
+	}
+	
 	.menu-grey-bg {
 		transition:all @trans-speed * 2 ease;
 		position:absolute;
@@ -782,6 +805,7 @@
 		bottom:30px;
 		#site.bg(#f9fafe);
 		
+		/*
 		&:before {
 			content:'';
 			position:absolute;
@@ -793,6 +817,7 @@
 			background-position:center center;
 			background-image:url('@{url-path-img}/diy-selfibot/.content-grey-bg/content-grey-bg-bg.png');
 		}
+		*/
 		
 	}
 	
@@ -936,7 +961,7 @@
 				margin:0px;
 				padding:0px;
 				width:17.5%;
-				min-height:100px;
+				min-height:135px;
 				vertical-align:top;
 				
 				a {
@@ -946,7 +971,7 @@
 					font-size: 19px;
 					font-weight: 400;
 					line-height: 25px;
-					background-position:left center;
+					background-position:left 10px;
 					background-repeat:no-repeat;
 					background-image:url('@{url-path-img}/diy-selfibot/.content-menu/menu-list-item-bg.png');
 					padding-left:35px;
@@ -1470,6 +1495,11 @@
 	bottom:100%;
 	opacity:0;
 	
+	.desktop .xs-h & {
+		transform-origin: center center;
+		transform: scale(0.6);
+	}
+	
 	.b-azbn-diy-selfibot-container[data-slide-id="3"] &,
 	.b-azbn-diy-selfibot-container[data-slide-id="4"] &,
 	.b-azbn-diy-selfibot-container[data-slide-id="5"] &,
@@ -1631,6 +1661,11 @@
 		background-position:center center;
 		background-image:url('@{url-path-img}/diy-selfibot/.congrat/congrat-selfibot.png');
 		
+		.desktop .xs-h & {
+			transform-origin: center center;
+			transform: scale(0.7);
+		}
+		
 		@media @media-size-xs {
 			& {
 				.__clear_abs_pos();
@@ -1666,6 +1701,11 @@
 		height:382px;
 		left:50%;
 		top:33.33333333%;
+		
+		.desktop .xs-h & {
+			transform-origin: center center;
+			transform: scale(0.6);
+		}
 		
 		@media @media-size-xs {
 			& {
