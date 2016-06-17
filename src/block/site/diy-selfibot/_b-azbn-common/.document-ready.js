@@ -46,3 +46,15 @@ $(function() {
 	}
 	
 });
+
+$(function() {
+
+	$(document.body).on('click.azbn', '.b-azbn-diy-selfibot-container .content-menu', {}, function(event){
+		event.preventDefault();
+		
+		$('.b-azbn-diy-selfibot-container .content-menu-cont').toggleClass('active');
+		$('.b-azbn-diy-selfibot-container .down-scroll-btn').toggle();
+		
+	});
+
+});
