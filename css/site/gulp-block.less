@@ -3593,11 +3593,11 @@ body {
 	width:100%;
 	z-index:38;
 	font-family: @dinpro;
-	text-transform:uppercase;
 	color:#ffffff;
 	opacity:0.66;
 	//margin-top:165px;
 	top:165px;
+	
 	
 	@media @media-size-xs {
 		& {
@@ -3621,6 +3621,7 @@ body {
 		font-weight: 500;
 		line-height: 68px;
 		letter-spacing: 4px;
+		text-transform:uppercase;
 		
 		@media @media-size-xs {
 			& {
@@ -3648,6 +3649,7 @@ body {
 		font-weight: 900;
 		line-height: 68px;
 		letter-spacing:15px;
+		text-transform:uppercase;
 		
 		@media @media-size-xs {
 			& {
@@ -3677,6 +3679,7 @@ body {
 		#site.bg(rgba(0,0,0,0.75));
 		opacity:0;
 		transition:all @trans-speed ease;
+		z-index:42;
 		
 		.b-azbn-diy-selfibot-container[data-slide-id="1"] & {
 			opacity:1;
