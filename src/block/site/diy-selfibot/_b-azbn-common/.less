@@ -306,6 +306,11 @@
 			}
 		}
 		
+		.desktop .xs-h & {
+			max-width:98%;
+			margin-top:0em;
+		}
+		
 		p {
 			font-size:14px;
 			
@@ -327,6 +332,13 @@
 					font-size:14px;
 				}
 			}
+			
+			br {
+				.desktop .xs-h & {
+					display:none;
+				}
+			}
+			
 		}
 		
 		@media @media-size-xs {
@@ -374,6 +386,11 @@
 		
 		.b-azbn-diy-selfibot-container[data-slide-id="1"] & {
 			max-width:258px;
+		}
+		
+		.desktop .xs-h & {
+			transform-origin:bottom center;
+			transform:scale(0.8);
 		}
 		
 		.title {
@@ -537,6 +554,15 @@
 						width:120px;
 					}
 				}
+				@media (min-width: 1200px) and (max-width: 1349px) {
+					.desktop .xs-h & {
+						width:120px;
+					}
+				}
+				
+				.desktop .xs-h & {
+					width:120px;
+				}
 			}
 			
 			@media @media-size-xs {
@@ -573,6 +599,10 @@
 					font-size: 25px;
 				}
 			}
+				.desktop .xs-h & {
+					font-size: 22px;
+					padding-left:140px;
+				}
 			
 		}
 		
@@ -601,6 +631,7 @@
 		height:96px;
 		float:right;
 		margin-right:220px;
+		transform-origin:right top;
 		
 		@media @media-size-xs {
 			& {
@@ -626,6 +657,10 @@
 			.desktop & {
 				margin-right:140px;
 			}
+		}
+		.desktop .xs-h & {
+			transform:scale(0.8);
+			margin-right:120px;
 		}
 		
 		&:before {
@@ -1639,8 +1674,11 @@
 		}
 		
 		.desktop .xs-h & {
+			bottom:85px;
 			transform-origin: bottom center;
-			transform: scale(0.7);
+			transform: scale(1);
+			left:33%;
+			width:34%;
 		}
 		
 	}
