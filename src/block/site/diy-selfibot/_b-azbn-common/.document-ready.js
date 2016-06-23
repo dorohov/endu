@@ -32,7 +32,10 @@ $(function() {
 		btn.toggleClass('active');
 		
 	});
-	$('.bottom-bordered-mobile-btn').trigger('click.azbn');
+	if(device.mobile() || device.tablet()) {
+		$('.bottom-bordered-mobile-btn').trigger('click.azbn');
+	}
+	
 	
 	$(document.body).on('click.azbn', '.menu-list-mobile-btn', {}, function(event){
 		event.preventDefault();
@@ -44,7 +47,10 @@ $(function() {
 		btn.toggleClass('active');
 		
 	});
-	$('.menu-list-mobile-btn').trigger('click.azbn');
+	if(device.mobile() || device.tablet()) {
+		$('.menu-list-mobile-btn').trigger('click.azbn');
+	}
+	
 	
 });
 
