@@ -22,6 +22,30 @@ $(function() {
 		
 	});
 	
+	$(document.body).on('click.azbn', '.bottom-bordered-mobile-btn', {}, function(event){
+		event.preventDefault();
+		
+		var btn = $(this);
+		var block = btn.parent();
+		var bb = block.find('.bottom-bordered');
+		bb.fadeToggle('fast');
+		btn.toggleClass('active');
+		
+	});
+	$('.bottom-bordered-mobile-btn').trigger('click.azbn');
+	
+	$(document.body).on('click.azbn', '.menu-list-mobile-btn', {}, function(event){
+		event.preventDefault();
+		
+		var btn = $(this);
+		var block = btn.parent();
+		var bb = block.find('ul');
+		bb.fadeToggle('fast');
+		btn.toggleClass('active');
+		
+	});
+	$('.menu-list-mobile-btn').trigger('click.azbn');
+	
 });
 
 $(function() {
