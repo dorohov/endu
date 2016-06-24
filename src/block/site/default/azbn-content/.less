@@ -273,9 +273,30 @@
 }
 .azbnmaterial {
 	.azbnmaterial-header {
-	width:100%;
+		width:100%;
+		color: #000000;
+		font-size: 25px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		line-height: 29px;
+		text-align:left;
+		max-width: 100% !important;
 	}
 	.azbnmaterial-content {
 		width:100% !important;
+		color:  #000000;
+		font-size: 16px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		line-height: 25px;/* Приближение из-за подстановки шрифтов */
+		text-align: left;
+	}
+	
+	.about__content-inner {
+		max-width: 100% !important;
+	}
+	
+	a {
+		&:hover {
+			text-decoration:underline;
+		}
 	}
 }
