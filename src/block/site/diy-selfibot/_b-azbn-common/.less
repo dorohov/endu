@@ -496,6 +496,16 @@
 	top:75px;
 	width:100%;
 	
+	.desktop .xs-h & {
+		top:45px;
+	}
+	
+	@media screen and (max-height:500px) {
+		.desktop .xs-h & {
+			top:25px;
+		}
+	}
+	
 	.slide-title {
 		float:left;
 		
@@ -1875,6 +1885,12 @@
 			width:34%;
 		}
 		
+		@media screen and (max-height: 550px) {
+			.desktop .xs-h & {
+				bottom:45px;
+			}
+		}
+		
 	}
 	
 	@media @media-size-xs {
@@ -1973,6 +1989,11 @@
 		}
 	}
 	
+	.desktop .xs-h & {
+		font-size:12px;
+		padding-top:50px;
+	}
+	
 }
 
 .congrat {
@@ -1989,8 +2010,9 @@
 		background-image:url('@{url-path-img}/diy-selfibot/.congrat/congrat-selfibot.png');
 		
 		.desktop .xs-h & {
-			transform-origin: center center;
-			transform: scale(0.7);
+			left:14%;
+			transform-origin: left top;
+			transform: scale(0.5);
 		}
 		
 		@media @media-size-xs {
@@ -2030,8 +2052,9 @@
 		top:33.33333333%;
 		
 		.desktop .xs-h & {
-			transform-origin: center center;
-			transform: scale(0.6);
+			left:52%;
+			transform-origin: left top;
+			transform: scale(0.5);
 		}
 		
 		@media @media-size-xs {
