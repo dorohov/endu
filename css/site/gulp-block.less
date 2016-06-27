@@ -2602,6 +2602,74 @@
 			text-decoration:underline;
 		}
 	}
+	
+	h1,h2,h3,h4,h5,h6 {
+		width:100%;
+		color: #000000;
+		font-weight: 700;
+		line-height: 29px;
+		text-align:left;
+		max-width: 100% !important;
+		margin:15px auto;
+	}
+	h1 {
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	h5 {
+		font-size: 14px;
+	}
+	h6 {
+		font-size: 11px;
+	}
+	
+	p, li {
+		font-family: DINPro;
+		color:  #000000;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		text-align: left;
+	}
+	ul,ol {
+		display:block;
+		margin:0 0 0 40px;
+	}
+	li {
+		margin:0;
+		padding:0;
+		
+		ul & {
+			list-style-type: circle
+		}
+	}
+	
+	table {
+		display:table;
+		width:100%;
+		
+		tr,th {
+			td {
+				padding:30px;
+			}
+			
+			&:nth-child(2n+1) {
+				background-color:rgba(108, 127, 128, 0.1);
+			}
+			&:nth-child(2n) {
+				background-color:transparent;
+			}
+		}
+	}
+	
 }
 body {
 	
@@ -4734,7 +4802,7 @@ body {
 				margin:0px;
 				padding:0px;
 				width:17.5%;
-				min-height:85px;
+				min-height:70px;
 				vertical-align:top;
 				
 				@media @media-size-xs {
@@ -5401,6 +5469,12 @@ body {
 		@media screen and (max-height: 550px) {
 			.desktop .xs-h & {
 				bottom:45px;
+			}
+		}
+		
+		@media (min-width: 1200px) and (max-width: 1349px) {
+			.desktop & {
+				bottom:85px;
 			}
 		}
 		
@@ -6074,6 +6148,70 @@ body {
 		top:0%;
 		letter-spacing:2px;
 		#site.bg(rgba(0,0,0,0.55));
+		
+		
+		
+		overflow:hidden;
+		
+		& video {
+			position:absolute;
+			left:-10%;
+			top:-10%;
+			width:120%;
+			height:120%;
+			
+			@media @media-size-xs {
+				& {
+					display:none;
+				}
+			}
+		}
+		
+		@media @media-size-xs {
+			& {
+				height: 125%;
+				position:absolute;
+				
+				video {
+					position:absolute;
+					left:0%;
+					top:-25%;
+					width:150%;
+					height:150%;
+				}
+			}
+		}
+		@media @media-size-sm {
+			& {
+				height: 125%;
+				position:absolute;
+				
+				video {
+					position:absolute;
+					left:0%;
+					top:-25%;
+					width:150%;
+					height:150%;
+				}
+			}
+		}
+		@media @media-size-md {
+			.tablet & {
+				height: 125%;
+				position:absolute;
+				
+				video {
+					position:absolute;
+					left:0%;
+					top:-25%;
+					width:150%;
+					height:150%;
+				}
+			}
+		}
+		
+		
+		
 		
 		.btns-block {
 			position:absolute;

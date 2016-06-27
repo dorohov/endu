@@ -72,6 +72,13 @@ $(function() {
 			}
 			
 			
+			if(obj.next == 9) {
+				$('#b-azbn-fullscreen-slide-9-video').get(0).play();
+			} else {
+				$('#b-azbn-fullscreen-slide-9-video').get(0).pause();
+			}
+			
+			
 			cb();
 		});
 		
