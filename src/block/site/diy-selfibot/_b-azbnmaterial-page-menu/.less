@@ -1,0 +1,79 @@
+.b-azbnmaterial-page-menu {
+	position:fixed;
+	left:0%;
+	bottom:120px;
+	padding:12px 25px;
+	transform-origin:0 0;
+	transform:rotate(-90deg);
+	background-color:#ffffff;
+	z-index:21;
+	
+	.modile &, .tablet & {
+		display:none;
+	}
+	
+	/*
+	.white-cont {
+		transform-origin:0 0;
+		transform:rotate(-90deg);
+		background-color:#ffffff;
+	}
+	*/
+	
+	
+	a {
+		display:inline-block;
+		transition:all @trans-speed ease;
+		text-transform:uppercase;
+		text-decoration:none;
+		font-size:14px;
+		padding:10px 16px;
+		margin:0 10px;
+		
+		&[data-btntarget="menu"] {
+			background-position:center center;
+			background-repeat:no-repeat;
+			min-width:116px;
+			height:36px;
+			margin-right:25px;
+			background-image:url('@{url-path-img}/diy-selfibot/.content-menu/content-menu-bg-rotate.png');
+		}
+		&[data-btntarget="callback"] {
+			background-color:transparent;
+			border:1px solid #999999;
+			color:#999999;
+			
+			
+			&:hover {
+				background-color:#0962ac;
+				border:1px solid #0962ac;;
+				color:#ffffff;
+			}
+		}
+		&[data-btntarget="join"] {
+			background-color:transparent;
+			border:1px solid #999999;
+			color:#999999;
+			
+			
+			&:hover {
+				background-color:#0962ac;
+				border:1px solid #0962ac;;
+				color:#ffffff;
+			}
+		}
+		&[data-btntarget="buy"] {
+			background-color:#0962ac;
+			border:1px solid #0962ac;
+			color:#ffffff;
+			
+			&:hover {
+				background-color:transparent;
+				border:1px solid transparent;
+				color:#0962ac;
+			}
+		}
+		
+	}
+	
+}
