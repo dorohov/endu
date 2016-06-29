@@ -8,8 +8,43 @@
 	background-color:#ffffff;
 	z-index:21;
 	
-	.modile &, .tablet & {
-		display:none;
+	@media @media-size-xs {
+		& {
+			.__clear_abs_pos();
+			transform:none;
+			text-align:center;
+			
+			& * {
+				.__clear_abs_pos();
+				max-width:100%;//temp
+				height:inherit;
+			}
+		}
+	}
+	@media @media-size-sm {
+		& {
+			.__clear_abs_pos();
+			transform:none;
+			text-align:center;
+			
+			& * {
+				.__clear_abs_pos();
+				max-width:100%;//temp
+				height:inherit;
+			}
+		}
+	}
+	@media @media-size-md {
+		.tablet & {
+			.__clear_abs_pos();
+			
+			& * {
+				.__clear_abs_pos();
+				max-width:100%;//temp
+				height:inherit;
+				//#site.bg(#ffffff);
+			}
+		}
 	}
 	
 	/*
@@ -30,6 +65,13 @@
 		padding:10px 16px;
 		margin:0 10px;
 		
+		@media @media-size-xs {
+			& {
+				padding:10px 8px;
+				margin:0 5px;
+			}
+		}
+		
 		&[data-btntarget="menu"] {
 			background-position:center center;
 			background-repeat:no-repeat;
@@ -37,6 +79,18 @@
 			height:36px;
 			margin-right:25px;
 			background-image:url('@{url-path-img}/diy-selfibot/.content-menu/content-menu-bg-rotate.png');
+			
+			@media @media-size-xs {
+				& {
+					display:none;
+				}
+			}
+			@media @media-size-sm {
+				& {
+					display:none;
+				}
+			}
+			
 		}
 		&[data-btntarget="callback"] {
 			background-color:transparent;

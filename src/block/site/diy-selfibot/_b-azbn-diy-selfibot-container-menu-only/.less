@@ -23,6 +23,7 @@
 	@media @media-size-xs {
 		& {
 			.__clear_abs_pos();
+			display:block;
 			
 			& * {
 				.__clear_abs_pos();
@@ -34,6 +35,7 @@
 	@media @media-size-sm {
 		& {
 			.__clear_abs_pos();
+			display:block;
 			
 			& * {
 				.__clear_abs_pos();
@@ -45,6 +47,7 @@
 	@media @media-size-md {
 		.tablet & {
 			.__clear_abs_pos();
+			display:block;
 			
 			& * {
 				.__clear_abs_pos();
@@ -431,8 +434,8 @@
 					
 					@media @media-size-sm {
 						& {
-							display:block;
-							width:100%;
+							display:inline-block;
+							width:45%;
 							min-height:inherit;
 						}
 					}
