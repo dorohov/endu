@@ -7,11 +7,11 @@
 	.include-custom-font(@family: @icon-base, @weight: normal, @style: normal){
 		@font-face{			
 			font-family: "@{family}";			
-			src:url('/fonts/@{family}.eot');
-			src:url('/fonts/@{family}.eot?#iefix') format('embedded-opentype'),
-				url('/fonts/@{family}.woff') format('woff'),
-				url('/fonts/@{family}.ttf') format('truetype'),
-				url('/fonts/@{family}.svg#icon') format('svg');
+			src:url('../fonts/@{family}.eot');
+			src:url('../fonts/@{family}.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/@{family}.woff') format('woff'),
+				url('../fonts/@{family}.ttf') format('truetype'),
+				url('../fonts/@{family}.svg#icon') format('svg');
 			font-weight: @weight;
 			font-style: @style;		
 		}
@@ -44,10 +44,10 @@
 	@icon-businessman: 	"\e008";
 	@icon-caduceus: 	"\e009";
 	@icon-call: 		"\e00a";
-	@icon-cameras: 		"\e00b";	
-	@icon-car: 			"\e00c";	
-	@icon-pcscreen: 	"\e00d";	
-	@icon-conference: 	"\e00e";	
+	@icon-cameras: 		"\e00b";
+	@icon-car: 			"\e00c";
+	@icon-pcscreen: 	"\e00d";
+	@icon-conference: 	"\e00e";
 	@icon-education: 	"\e00f";
 	@icon-electric: 	"\e010";
 	@icon-ellipsis: 	"\e011";
