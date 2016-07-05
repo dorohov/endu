@@ -211,7 +211,7 @@
 	z-index:38;
 	font-family: @dinpro;
 	color:#ffffff;
-	opacity:0.66;
+	opacity:1;
 	//margin-top:165px;
 	top:165px;
 	
@@ -297,6 +297,11 @@
 		opacity:0;
 		transition:all @trans-speed ease;
 		z-index:42;
+		
+		.buy-variant {
+			font-weight:bold;
+			font-size:1.2em;
+		}
 		
 		.b-azbn-diy-selfibot-container[data-slide-id="1"] & {
 			opacity:1;
@@ -955,11 +960,13 @@
 	top:0;
 	bottom:0;
 	z-index:46;
+	opacity: 1;
 	#site.bg(#ffffff);
 	
 	&.active {
 		left:0%;
 		right:0%;
+		opacity: 0.95;
 	}
 	
 	@media @media-size-xs {
@@ -2091,7 +2098,7 @@
 		.desktop .xs-h & {
 			left:14%;
 			transform-origin: left top;
-			transform: scale(0.5);
+			transform: scale(0.7);
 		}
 		
 		@media @media-size-xs {
@@ -2133,7 +2140,7 @@
 		.desktop .xs-h & {
 			left:52%;
 			transform-origin: left top;
-			transform: scale(0.5);
+			transform: scale(0.7);
 		}
 		
 		@media @media-size-xs {
