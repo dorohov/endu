@@ -3531,7 +3531,7 @@ body {
 					display:block;
 					width:100%;
 					text-align:left;
-					padding-left:1em;
+					padding:10px;
 					
 					&.search-form-btn {
 						display:none;
@@ -3903,7 +3903,8 @@ body {
 		#site.bg(rgba(0,0,0,0.75));
 		opacity:0;
 		transition:all @trans-speed ease;
-		z-index:42;
+		z-index:45;
+		
 		
 		.buy-variant {
 			font-weight:bold;
@@ -6625,6 +6626,7 @@ body {
 	.b-azbn-slide  {
 		.__clear_abs_pos_imp();
 		//padding:30px 0;
+		text-align:center;
 		
 		.bot-part {
 			.__clear_abs_pos_imp();
@@ -6634,7 +6636,23 @@ body {
 			background-repeat:no-repeat;
 			background-position:center center;
 			background-size:contain;
-			margin:15px auto;
+			margin:15px auto 35px;
+			
+			
+			@media @media-size-sm {
+				& {
+					display: inline-block;
+					width: 40%;
+				}
+			}
+			@media @media-size-md {
+				.tablet & {
+					display: inline-block;
+					width: 25%;
+				}
+			}
+			
+			
 			
 			&[data-bot-part="1"] {
 				background-image:url('@{url-path-img}/diy-selfibot/.bot-part/1.jpg');
@@ -6681,8 +6699,23 @@ body {
 	
 	
 	.bottom-bordered-cont {
+		text-align:center;
+		
 		.bottom-bordered {
 			padding:15px 25px;
+			display: inline-block;
+			text-align:center;
+			
+			@media @media-size-sm {
+				& {
+					width: 40%;
+				}
+			}
+			@media @media-size-md {
+				.tablet & {
+					width: 30%;
+				}
+			}
 		}
 	}
 	
@@ -6700,12 +6733,46 @@ body {
 			max-width:100%;
 			transform:scale(1);
 			width:100%;
+			
+			@media @media-size-sm {
+				& {
+					max-width: 400px;
+				}
+			}
+			@media @media-size-md {
+				.tablet & {
+					max-width: 400px;
+				}
+			}
+			
 		}
 	}
 	
 	
 	.youtube-btn {
 		padding-top:15px;
+		
+		@media @media-size-sm {
+			& {
+				margin-left: 0px;
+				padding-left:75px;
+				padding-top: 0px;
+				width: 35%;
+			}
+		}
+		@media @media-size-md {
+			.tablet & {
+				margin-left: 0px;
+				padding-left:75px;
+				padding-top: 0px;
+				width: 35%;
+			}
+		}
+	}
+	
+	
+	.btns-block.top:hover {
+		background-image: none;
 	}
 	
 	
