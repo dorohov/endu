@@ -44,11 +44,13 @@ $(function() {
 		var block = btn.parent();
 		var bb = block.find('ul');
 		bb.fadeToggle('fast');
+		$('.menu-block-title').toggle();
 		btn.toggleClass('active');
 		
 	});
 	if(device.mobile() || device.tablet()) {
 		$('.menu-list-mobile-btn').trigger('click.azbn');
+		$('.menu-block-title').hide();
 	}
 	
 	
