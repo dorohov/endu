@@ -297,30 +297,37 @@
 		
 	}
 	.text-for-george {
-		max-width:960px;
+		//max-width:960px;
 		margin:2em auto 0em;
 		padding:2em 3em;
-		color:#ffffff;
-		#site.bg(rgba(0,0,0,0.75));
+		//color:#ffffff;
+		//#site.bg(rgba(0,0,0,0.75));
 		opacity:0;
 		transition:all @trans-speed ease;
 		z-index:45;
 		
+		max-width: 640px;
+		#site.bg(rgba(255,255,255,0.75));
+		color: #000;
+		line-height: 22px;
 		
 		.buy-variant {
 			font-weight:bold;
 			font-size:1.2em;
+			color: #0064a9;
 		}
 		
 		.b-azbn-diy-selfibot-container[data-slide-id="1"] & {
 			opacity:1;
 			#site.bg(rgba(0,0,0,1));
+			#site.bg(rgba(255,255,255,0.75));
 		}
 		
 		@media @media-size-xs {
 			& {
 				opacity:1;
 				#site.bg(rgba(0,0,0,1));
+				#site.bg(rgba(255,255,255,0.75));
 			}
 		}
 		
@@ -328,6 +335,7 @@
 			& {
 				opacity:1;
 				#site.bg(rgba(0,0,0,0.67));
+				#site.bg(rgba(255,255,255,0.75));
 			}
 		}
 		
@@ -335,6 +343,7 @@
 			.tablet & {
 				opacity:1;
 				#site.bg(rgba(0,0,0,1));
+				#site.bg(rgba(255,255,255,0.75));
 				height: auto;
 			}
 		}
