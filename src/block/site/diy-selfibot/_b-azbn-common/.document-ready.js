@@ -1,6 +1,7 @@
 $(function() {
 	
 	$('.bottom-bordered .bb-help').tooltip();
+	$('.bot-part[data-original-title]').tooltip();
 	
 	$(document.body).on('click.azbn', '.b-azbn-diy-selfibot-container .youtube-btn', {}, function(event){
 		event.preventDefault();
