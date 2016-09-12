@@ -1,4 +1,194 @@
 
+.selfibot__buy{
+	//opacity: @opacity;
+	padding: 15px 0;
+	background: rgb(189, 227, 227);
+	position: relative;
+	min-height: 545px;
+	@media @media-size-md{	
+    	min-height: 430px;
+	}
+	@media @media-size-sm{	
+    	min-height: 235px;
+	}
+	@media @media-size-xs{	
+    	min-height: 0;
+	}
+}
+.selfibot-buy__bg{
+	position: absolute;
+	top: -40px;
+	width: 100%;
+	@media @media-size-md{
+		top: -35px;
+		img{max-width: 975px;}
+	}
+	@media @media-size-sm{
+		top: -28px;
+		img{max-width: 750px;}
+	}
+	img{
+		margin: 0 auto;
+	}
+}
+.selfibot-buy__note{	
+	.flex-display(@display: flex);
+	.align-items(@align: center);
+    min-height: 510px;
+    padding: 15px 0;
+    font-size: 24px;
+    color: lighten(@black, 40%);
+    position: relative;
+    z-index: 100;
+	@media @media-size-md{	
+		font-size: 20px;
+    	min-height: 430px;
+	}
+	@media @media-size-sm{	
+		font-size: 16px;
+		min-height: 322px;
+		padding: 10px 0; 
+	}
+	@media @media-size-xs{	
+		text-align: center;
+    	min-height: 0;
+    	font-size: 20px;
+		.justify-content(@justify: center);
+	}
+}
+.selfibot-buy__heading-block{
+	font-size: 46px;
+	font-weight: 900;
+	text-align: left;
+    line-height: 58px;
+	@media @media-size-md{	
+		font-size: 38px;
+	    line-height: 48px;
+	}
+	@media @media-size-sm{	
+		font-size: 24px!important;
+	    line-height: 34px!important;
+	}
+	@media @media-size-xs{	    
+		font-size: 24px!important;
+    	text-align: center;
+	}
+}
+.selfibot-buy__btn{
+	max-width: 225px;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 15px 10px;
+    border-radius: 35px;
+	@media @media-size-sm{	
+		max-width: 175px;
+		padding: 8px 10px;
+	}
+	@media @media-size-xs{	
+		max-width: 175px;
+		padding: 8px 10px;
+		margin-left:auto; 
+		margin-right:auto; 
+	}
+}
+.selfibot-buy__btn-icon{
+	@green: rgb(53, 119, 119);
+	a{
+		color: @green;
+		text-decoration: underline;
+		font-size: 14px;
+		display: inline-block;
+		&:hover,
+		&:focus{
+			color: @black;
+			text-decoration: none;
+		}
+		&:before{
+			display: inline-block;
+			font-family: @icon-base;
+			font-size: 26px;
+			margin-right: 15px;
+			vertical-align: middle;
+		}
+		&.icon-playbutton{
+			&:before{
+				content: @icon-playbutton;
+			}
+			margin-right: 40px;
+			@media @media-size-xs{	
+				margin: 0 0 10px;
+			}
+		}
+		&.icon-call:before{
+			content: @icon-call;
+		}
+	}
+}
+.oficiant__buy{
+	//opacity: @opacity;
+	min-height: 548px;
+	@media @media-size-md{	
+    	min-height: 467px;
+	}
+	@media @media-size-sm{	
+    	min-height: 235px;
+	}
+	@media @media-size-xs{	
+    	min-height: 0;
+	}
+}
+.tele__buy{
+	//opacity: @opacity;
+	min-height: 548px;
+	@media @media-size-md{	
+    	min-height: 467px;
+	}
+	@media @media-size-sm{	
+    	min-height: 235px;
+	}
+	@media @media-size-xs{	
+    	min-height: 0;
+	}
+}
+.tele-buy__bg{
+	@media @media-size-md{
+		img{max-width: 975px;}
+	}
+	@media @media-size-sm{
+		img{max-width: 740px;}
+	}
+}
+.rush-buy__bg {
+	position: absolute;	
+	width: 100%;
+	img{
+		margin: 0 auto;
+	}
+}
+.rush-buy__heading-block{
+	font-size: 38px;
+    line-height: 48px;
+	font-weight: 900;
+	text-align: left;
+	@media @media-size-md{	
+		font-size: 30px;
+	    line-height: 42px;
+	}
+	@media @media-size-sm{	
+		font-size: 24px!important;
+	    line-height: 34px!important;
+	}
+	@media @media-size-xs{	    
+		font-size: 24px!important;
+    	text-align: center;
+	}
+}
+.rush2-buy__bg{
+	img{
+		.rotation-translate(@deg:0deg, @x:-80px, @y:0px);
+	}
+}
+
 .content-block{
 	background: rgb(235, 235, 235);
 	//min-height: 655px;
@@ -1265,196 +1455,6 @@
     }
     .mb{margin-bottom: 20px;}
 }
-.selfibot__buy{
-	//opacity: @opacity;
-	padding: 15px 0;
-	background: rgb(189, 227, 227);
-	position: relative;
-	min-height: 545px;
-	@media @media-size-md{	
-    	min-height: 430px;
-	}
-	@media @media-size-sm{	
-    	min-height: 235px;
-	}
-	@media @media-size-xs{	
-    	min-height: 0;
-	}
-}
-.selfibot-buy__bg{
-	position: absolute;
-	top: -40px;
-	width: 100%;
-	@media @media-size-md{
-		top: -35px;
-		img{max-width: 975px;}
-	}
-	@media @media-size-sm{
-		top: -28px;
-		img{max-width: 750px;}
-	}
-	img{
-		margin: 0 auto;
-	}
-}
-.selfibot-buy__note{	
-	.flex-display(@display: flex);
-	.align-items(@align: center);
-    min-height: 510px;
-    padding: 15px 0;
-    font-size: 24px;
-    color: lighten(@black, 40%);
-    position: relative;
-    z-index: 100;
-	@media @media-size-md{	
-		font-size: 20px;
-    	min-height: 430px;
-	}
-	@media @media-size-sm{	
-		font-size: 16px;
-		min-height: 322px;
-		padding: 10px 0; 
-	}
-	@media @media-size-xs{	
-		text-align: center;
-    	min-height: 0;
-    	font-size: 20px;
-		.justify-content(@justify: center);
-	}
-}
-.selfibot-buy__heading-block{
-	font-size: 46px;
-	font-weight: 900;
-	text-align: left;
-    line-height: 58px;
-	@media @media-size-md{	
-		font-size: 38px;
-	    line-height: 48px;
-	}
-	@media @media-size-sm{	
-		font-size: 24px!important;
-	    line-height: 34px!important;
-	}
-	@media @media-size-xs{	    
-		font-size: 24px!important;
-    	text-align: center;
-	}
-}
-.selfibot-buy__btn{
-	max-width: 225px;
-    font-size: 22px;
-    font-weight: 700;
-    padding: 15px 10px;
-    border-radius: 35px;
-	@media @media-size-sm{	
-		max-width: 175px;
-		padding: 8px 10px;
-	}
-	@media @media-size-xs{	
-		max-width: 175px;
-		padding: 8px 10px;
-		margin-left:auto; 
-		margin-right:auto; 
-	}
-}
-.selfibot-buy__btn-icon{
-	@green: rgb(53, 119, 119);
-	a{
-		color: @green;
-		text-decoration: underline;
-		font-size: 14px;
-		display: inline-block;
-		&:hover,
-		&:focus{
-			color: @black;
-			text-decoration: none;
-		}
-		&:before{
-			display: inline-block;
-			font-family: @icon-base;
-			font-size: 26px;
-			margin-right: 15px;
-			vertical-align: middle;
-		}
-		&.icon-playbutton{
-			&:before{
-				content: @icon-playbutton;
-			}
-			margin-right: 40px;
-			@media @media-size-xs{	
-				margin: 0 0 10px;
-			}
-		}
-		&.icon-call:before{
-			content: @icon-call;
-		}
-	}
-}
-.oficiant__buy{
-	//opacity: @opacity;
-	min-height: 548px;
-	@media @media-size-md{	
-    	min-height: 467px;
-	}
-	@media @media-size-sm{	
-    	min-height: 235px;
-	}
-	@media @media-size-xs{	
-    	min-height: 0;
-	}
-}
-.tele__buy{
-	//opacity: @opacity;
-	min-height: 548px;
-	@media @media-size-md{	
-    	min-height: 467px;
-	}
-	@media @media-size-sm{	
-    	min-height: 235px;
-	}
-	@media @media-size-xs{	
-    	min-height: 0;
-	}
-}
-.tele-buy__bg{
-	@media @media-size-md{
-		img{max-width: 975px;}
-	}
-	@media @media-size-sm{
-		img{max-width: 740px;}
-	}
-}
-.rush-buy__bg {
-	position: absolute;	
-	width: 100%;
-	img{
-		margin: 0 auto;
-	}
-}
-.rush-buy__heading-block{
-	font-size: 38px;
-    line-height: 48px;
-	font-weight: 900;
-	text-align: left;
-	@media @media-size-md{	
-		font-size: 30px;
-	    line-height: 42px;
-	}
-	@media @media-size-sm{	
-		font-size: 24px!important;
-	    line-height: 34px!important;
-	}
-	@media @media-size-xs{	    
-		font-size: 24px!important;
-    	text-align: center;
-	}
-}
-.rush2-buy__bg{
-	img{
-		.rotation-translate(@deg:0deg, @x:-80px, @y:0px);
-	}
-}
-
 .laser__delivery{
 	padding: 45px 0 60px;
 	//opacity: @opacity;
@@ -4045,6 +4045,9 @@ body {
 	width:40%;
 	left:30%;
 	bottom:0;
+    width: 75px;
+    left: 50%;
+    transform: translateX(-50%);
 	
 	.b-azbn-diy-selfibot-container[data-slide-id="9"] & {
 		bottom:100%;
