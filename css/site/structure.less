@@ -390,3 +390,154 @@ body {
 		//._czr__laser__note-item{margin-bottom: 55px;}
 	}
 }
+._czr__white-block{
+	background: @white;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 50px 0;
+	p, div{margin-bottom: 5px;}
+}
+._czr__container{
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;	
+}
+._czr__margin-bottom{
+	margin-bottom: 30px;
+}
+._czr__blue{
+	color: rgb(84,141,212);
+}
+._czr__img-round{
+	img{
+		border-radius: 50%;
+	}
+}
+._czr__george-avatar{
+	float: left;
+	img{
+		width: 250px;
+		margin: 0 25px 30px 0;
+	}
+	@media @media-size-xs{
+		float: none;
+		img{margin: 0 auto 30px;}
+	}
+}
+._czr__darkwhite-block{
+    background-color: #f1f1f1;
+    font-family: @roboto;
+    font-size: 18px;
+    line-height: 28px;
+    color: #303030;
+    padding: 50px 0px;
+	.btn-main{
+		max-width: 180px;
+		color: @white;
+		width: 100%;
+		font-size: 15px;
+		line-height: 25px;
+		border-radius: 30px;
+		text-decoration: none;
+		@media @media-size-sm{
+			max-width: 160px;
+		}
+		@media @media-size-xs{
+			max-width: 150px;
+		}
+		&.delivery-btn__red{
+			background: @red;
+			border-color: @red;
+		}
+		&.delivery-btn__blue{
+			background: @blue-light;
+			border-color: @blue-light;
+		}
+		&.delivery-btn__green{
+			background: @green;
+			border-color: @green;
+		} 
+	}
+}
+._czr__dw-heading{
+	font-size: 36px!important;
+    line-height: 48px!important;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+._czr__dropdown{
+	&.open{
+		._czr__dropdown-body{
+			height: inherit;
+		}
+	}
+}
+._czr__dropdown-btn{
+	cursor: pointer;
+}
+._czr__dropdown-body{
+	height: 0;
+	overflow: hidden;
+	transition: 0.4s all;
+}
+._czr__box-img{
+	float: left;
+    border: 1px solid #000;
+    padding: 70px 30px;
+    background: #fff;
+    margin: 0 30px 20px 0;
+    @media @media-size-xs{
+		float: none;
+    	margin: 0 20px 30px;
+    }
+}
+.experience-block{
+	text-align: center; 
+	a{
+		display: inline-block;
+	}
+	&.experience{
+		img{
+			@media @media-screen{
+				width: 940px;
+			}
+		}
+	}
+}
+._czr__george-block{
+	z-index: 5;
+	position: relative;
+}
+.goto-top {
+	@media @media-device{display: none;}
+	position:fixed;
+	opacity:0;
+	z-index:-1;
+	bottom:120%;
+	right:5%;
+	content:'';
+	display:inline-block;
+	width:1px;
+	height:1px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image:url('@{url-path-img}/fecss/goto-top.png');
+	text-decoration:none;
+	
+	transition:all 0.999s ease;
+	
+	&.active {
+		width:79px;
+		height:79px;
+		bottom:25%;
+		opacity:1;
+		z-index:15;
+		
+		&:hover {
+			transform:scale(1.3);
+		}
+	}
+}

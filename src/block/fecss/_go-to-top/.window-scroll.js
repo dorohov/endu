@@ -8,13 +8,13 @@ $(
 		
 		var pos = $(document).scrollTop();
 		
-		var gototop = $('.go-to-top');
+		var gototop = $('.goto-top');
 		if(gototop.hasClass('active')) {
-			if(pos < 200) {
+			if(pos < 450) {
 				gototop.removeClass('active');
 			}
 		} else {
-			if(pos > 200) {
+			if(pos > 450) {
 				gototop.addClass('active');
 			}
 		}

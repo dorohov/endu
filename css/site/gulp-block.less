@@ -7904,11 +7904,23 @@ body {
 	}
 	
 }
-.b-main-product {
+._bj__btn{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	padding: 25px 0;
+	@media @media-size-xs{
+		justify-content: center;
+	}
+	.btn-main{
+		margin: 0 20px 10px;
+	}
+}
+/*.b-main-product {
 	#site.bg(#f6f6f6);
 	
 	.product-line {
-		margin-top:-9em;
+		//margin-top:-9em;
 		padding-bottom:6em;
 		
 		@media @media-size-xs {
@@ -7926,7 +7938,7 @@ body {
 				
 				.product:nth-child(1), .product:nth-child(2) {
 					.white {
-						//height:55.5em;/*46.5em;*/
+						//height:55.5em;46.5em;
 						//height: 450px;
 						@media @media-size-xs {
 							& {
@@ -7993,10 +8005,11 @@ body {
 			.product {
 				display:block;
 				padding:1em;
+				border: 2px solid rgb(84,141,212);
+				margin-bottom: 20px;
 				@media @media-size-lg {
 					height: 305px;
 				}
-				margin-bottom: 20px;
 				&:nth-child(7){
 					height: 205px; 
 				}
@@ -8129,6 +8142,114 @@ body {
 		
 	}
 	
+}*/
+._czr__main-products{
+	#site.bg(#f6f6f6);
+	padding: 50px 0;
+	._mp__container{
+		max-width: 1180px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0 auto;
+	}
+	._mp__heading{
+		text-align: center;
+		font-size: 42px!important;
+		line-height: 46px!important;
+		color: rgb(84,141,212)!important;
+		text-transform: uppercase;
+		margin-bottom: 35px;
+		@media @media-size-xs{
+			font-size: 30px!important;
+			line-height: 34px!important;
+		}
+	}
+	._mp__row{
+		display: flex;
+		flex-wrap: wrap;    
+		align-items: flex-start;
+	}
+	._mp__cols{
+		width: 25%;
+		margin-left: -2px;
+		margin-top: -2px;
+		&.cols4{
+			width: 49.8%;
+			@media @media-size-czr-sm-p{width: 49.7%;}
+			@media @media-size-xs{width: 100%;}
+		}
+		@media @media-size-xs{width: 100%;}
+	}
+	._mp__prod-item{
+		display: block;
+		background: rgb(255, 255, 255);
+		border: 2px solid rgb(84,141,212);
+		padding: 20px;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		transition: 0.4s all;
+		//height: 100%;
+		@media @media-size-czr-sm{padding: 20px 15px;}
+		&.height50{
+			//height: 50%;
+			&:last-child{margin-top: -2px;}
+		}
+		.inner{
+			transition: 0.4s all;
+		}
+		.img{
+			margin-bottom: 10px;
+			img{margin: 0 auto}
+		}
+		.title{
+			color: #333;
+			font-size: 1.4em;
+			font-weight: 700;
+			text-transform: uppercase;
+			border-top: 1px #999 solid;
+			padding-top: 15px;
+			@media @media-size-czr-sm{font-size: 1em}
+		}
+		.btn-block{
+			@media @media-device{
+				padding-top: 15px;
+			}
+			@media @media-screen{
+				opacity: 0;
+				transition: 0.4s all;
+				position: absolute;
+				bottom: -40px;
+				width: 100%;
+				z-index: -5;
+			}
+		}
+		.btn{
+			background: #00b29c;
+    		border-color: #00b29c;
+    		color: rgb(255, 255, 255);
+    		outline: none;
+    		border-radius: 30px;
+    		text-transform: uppercase;
+    		font-size: 12px;
+    		padding: 6px 15px;
+		}
+		&:hover{
+			background: darken(rgb(255, 255, 255), 5%) ;
+			border-color: darken(rgb(84,141,212), 15%) ;
+			z-index: 2;			
+			@media @media-screen{
+				.inner{
+					transform: translateY(-41px);
+				}
+				.btn-block{
+					opacity: 1;				
+					bottom: 20px;
+					z-index: 5;
+				}
+			}
+		}
+	}
 }
 .b-news-twitter {
 	padding:6em 0;
@@ -8448,6 +8569,43 @@ body {
 		}
 	}
 	
+}
+._tb__block{
+	padding: 0;
+}
+._tb__heading-bg{
+	background-image: url(http://endurancerobots.com/wp-content/themes/azbnbasetheme/img/bg-main-text.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 30px 0;
+}
+._tb__heading{
+	text-decoration: underline!important;
+	color: @white!important;
+}
+._tb__note{
+	._czr__container{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	p, div {
+		padding-bottom:10px;
+	}
+	h3 {
+		font-size: 24px;
+		margin: 0 0 15px;
+	}
+	ul,ol {
+		margin: 0 0 10px 20px;
+		li{
+			margin-bottom: 3px;
+		}
+	}
+	table td {
+	    padding: 1em;
+	    border: 1px solid #333;
+	}
 }
 .b-top-slider {
 	background-repeat:no-repeat;
