@@ -5785,7 +5785,7 @@ body {
 		}
 	}
 	
-	.congrat-iphone-cont {
+	.congrat-iphone-cont, .congrat-selfibot-cont {
 		position:absolute;
 		width:405px;
 		height:382px;
@@ -5825,7 +5825,7 @@ body {
 			}
 		}
 		
-		.congrat-iphone {
+		.congrat-iphone, .congrat-selfibot {
 			position:absolute;
 			left:0;
 			top:0;
@@ -5836,7 +5836,11 @@ body {
 			background-position:center center;
 			background-image:url('@{url-path-img}/diy-selfibot/.congrat/congrat-iphone.png');
 			
-			.iphone-screen {
+			&.congrat-selfibot {
+				background-image:url('@{url-path-img}/diy-selfibot/.congrat/congrat-selfibot.png');
+			}
+			
+			.iphone-screen, .selfibot-screen {
 				transition:all @trans-speed ease;
 				opacity:0;
 				position:absolute;
@@ -5891,7 +5895,7 @@ body {
 			}
 		}
 		
-		.congrat-arrow {
+		.congrat-arrow, .congrat-arrow2 {
 			position:absolute;
 			right:0;
 			bottom:0;
@@ -5902,6 +5906,10 @@ body {
 			background-position:center center;
 			background-image:url('@{url-path-img}/diy-selfibot/.congrat/congrat-arrow.png');
 		}
+	}
+	
+	.congrat-selfibot-cont {
+		left:22%;
 	}
 	
 }
