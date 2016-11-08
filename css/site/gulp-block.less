@@ -3694,6 +3694,7 @@ body {
 		z-index:34;
 		top:0%;
 		background-color:#ffffff;
+		//background-color:fadeout(@white, 30%);
 		background-size:cover;
 		background-repeat:no-repeat;
 		background-position:center center;
@@ -4621,6 +4622,7 @@ body {
 	z-index:100;
 	opacity: 1;
 	#site.bg(#ffffff);
+	background-color: fadeout(@white, 30%)!important;
 	
 	&.active {
 		left:0%;
@@ -4662,6 +4664,7 @@ body {
 		top:30px;
 		bottom:30px;
 		#site.bg(#f9fafe);
+		background-color: fadeout(#f9fafe, 30%)!important;
 		
 		/*
 		&:before {
@@ -6005,6 +6008,16 @@ body {
 		}
 	}
 	
+}
+
+.b-azbn-diy-selfibot-container-menu-only {
+	background-color: fadeout(@white, 35%)!important;
+	.fullscreen-content{
+		background-color: fadeout(@white, 100%)!important;
+		.menu-grey-bg{
+			background-color: fadeout(@white, 100%)!important;
+		}
+	}
 }
 .b-azbn-diy-selfibot-container {
 	transition:all @trans-speed * 2 ease;
