@@ -1,6 +1,5 @@
 
 	$('.b-video-cont').each(function(index){
-		event.preventDefault();
 		
 		var block = $(this);
 		var items = block.find('.list .item');
